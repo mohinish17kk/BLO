@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="mgov.gov.in.blohybrid.FieldVisitSearch"
+    tools:showIn="@layout/activity_field_visit_search"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/image_ref"
+            android:adjustViewBounds="true"
+            android:src="@drawable/eciheader"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="right"
+        android:paddingLeft="4pt">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/Search_By_Name"
+            android:textSize="9pt"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:paddingLeft="3pt"
+            android:paddingRight="3pt"
+            android:layout_marginRight="3pt"
+            android:paddingTop="2pt"
+            android:id="@+id/tvsearchByName"
+            android:textAlignment="center"
+            android:background="@drawable/btn_background"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/VIEW"
+            android:textSize="9pt"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:paddingRight="5pt"
+            android:paddingLeft="5pt"
+            android:paddingTop="2pt"
+            android:id="@+id/tvview"
+            android:textAlignment="center"
+            android:background="@drawable/btn_background"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Home"
+            android:textSize="10pt"
+            android:textStyle="bold"
+            android:textColor="#004d99"
+            android:paddingRight="5pt"
+            android:paddingLeft="10pt"
+            android:id="@+id/tvhome"
+            android:layout_gravity="right"
+            android:paddingTop="4pt"/>
+        
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="4pt"
+        android:paddingRight="4pt">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/Search_Voter_By_Serial_Number"
+            android:textColor="#FFFFFF"
+            android:textSize="10pt"
+            android:textStyle="bold"
+            android:id="@+id/textView"
+            android:gravity="center"
+            android:background="#AAFF9800"
+            android:layout_gravity="center_horizontal" />
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="3pt"
+            android:background="#FF9800" />
+
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Enter_Serial_Number_of"
+            android:textSize="10pt"
+            android:textStyle="bold"
+            android:textColor="#004d99"
+            android:paddingRight="5pt"
+            android:paddingLeft="5pt"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:layout_marginTop="3pt"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Head_of_the_Family"
+                android:textSize="9pt"
+                android:textColor="#004d99"
+                android:paddingRight="5pt"
+                android:paddingLeft="5pt"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:layout_marginTop="3pt"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/Serial_Number"
+                android:layout_marginTop="2pt"
+                android:paddingRight="5pt"
+                android:paddingLeft="5pt"
+                android:inputType="number"
+                android:id="@+id/ethof"
+                android:textSize="8pt"/>
+
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Male"
+                android:textColor="#004d99"
+                android:textSize="8pt"
+                android:id="@+id/rbmale"/>
+
+            <RadioButton
+                android:id="@+id/rbfemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5pt"
+                android:text="@string/Female"
+                android:textColor="#004d99"
+                android:textSize="8pt" />
+
+            <RadioButton
+                android:id="@+id/rbthirdgender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5pt"
+                android:text="@string/Third_Gender"
+                android:textColor="#004d99"
+                android:textSize="8pt" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/layoutfemaleid"
+            android:weightSum="100"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="38"
+                android:layout_height="wrap_content"
+                android:text="@string/spouse"
+                android:textSize="9pt"
+                android:textColor="#004d99"
+                android:paddingRight="5pt"
+                android:paddingLeft="5pt"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5pt"
+                android:gravity="left"
+                android:layout_marginTop="3pt"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="32"
+                android:layout_height="wrap_content"
+                android:hint="@string/Serial_Number"
+                android:paddingRight="5pt"
+                android:paddingLeft="5pt"
+                android:inputType="number"
+                android:textSize="8pt"
+                android:id="@+id/etfemaleserialnumber"/>
+            <CheckBox
+                android:layout_width="0dp"
+                android:layout_weight="30"
+                android:layout_height="wrap_content"
+                android:text="@string/Late_NA"
+                android:id="@+id/cbfemalelate"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/layoutmaleid"
+            android:weightSum="100"
+            android:visibility="gone"
+            android:layout_marginTop="2pt">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="38"
+                android:layout_height="match_parent"
+                android:text="@string/spouse"
+                android:textSize="9pt"
+                android:textColor="#004d99"
+                android:paddingRight="5pt"
+                android:paddingLeft="5pt"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:layout_marginLeft="5pt"
+                android:layout_marginTop="3pt"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="32"
+                android:hint="@string/Serial_Number"
+                android:paddingRight="5pt"
+                android:paddingLeft="5pt"
+                android:inputType="number"
+                android:textSize="8pt"
+                android:id="@+id/etmaleserialnumber"/>
+            <CheckBox
+                android:layout_width="0dp"
+                android:layout_weight="30"
+                android:layout_height="wrap_content"
+                android:text="@string/Late_NA"
+                android:layout_marginLeft="5pt"
+                android:id="@+id/cbmalelate"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/llson">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3pt"
+                android:paddingLeft="5pt"
+                android:paddingRight="5pt"
+                android:text="@string/Son_Number"
+                android:textColor="#004d99"
+                android:textSize="9pt" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/count"
+                android:layout_marginLeft="2pt"
+                android:paddingRight="5pt"
+                android:paddingLeft="5pt"
+                android:id="@+id/etsuncount"
+                android:inputType="number"
+                android:textSize="8pt"/>
+
+            <CheckBox
+                android:id="@+id/cbsuncount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5pt"
+                android:text="@string/Ok"
+                android:textColor="#004d99"
+                android:textSize="10pt"
+                android:layout_marginTop="2pt"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/llsun">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:layout_marginTop="2pt"
+            android:id="@+id/llud">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:layout_height="wrap_content"
+                android:text="@string/Dependent_Daughter_Number"
+                android:textSize="9pt"
+                android:textColor="#004d99"
+                android:paddingRight="5pt"
+                android:paddingLeft="5pt"
+                android:layout_marginBottom="4pt"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="25"
+                android:layout_height="wrap_content"
+                android:hint="@string/count"
+                android:paddingRight="5pt"
+                android:paddingLeft="5pt"
+                android:id="@+id/etdaughtercountU"
+                android:inputType="number"
+                android:textSize="8pt"/>
+
+            <CheckBox
+                android:id="@+id/cbdaughterunmarriedcount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/Ok"
+                android:layout_weight="25"
+                android:textColor="#004d99"
+                android:textSize="10pt"
+                android:layout_marginTop="2pt"
+                android:layout_marginRight="2pt"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/lldaughterUN">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:layout_marginTop="2pt"
+            android:id="@+id/llmd">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:layout_height="wrap_content"
+                android:text="@string/Married_Daughter_in_part_Number"
+                android:textSize="9pt"
+                android:textColor="#004d99"
+                android:paddingRight="5pt"
+                android:paddingLeft="5pt"
+                android:layout_marginBottom="4pt"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="25"
+                android:layout_height="wrap_content"
+                android:hint="@string/count"
+                android:paddingRight="5pt"
+                android:paddingLeft="5pt"
+                android:id="@+id/etdaughtercountM"
+                android:inputType="number"
+                android:textSize="8pt"/>
+
+            <CheckBox
+                android:id="@+id/cbdaughterMarriedcount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/Ok"
+                android:layout_weight="25"
+                android:textColor="#004d99"
+                android:textSize="10pt"
+                android:layout_marginTop="2pt"
+                android:layout_marginRight="2pt"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/lldaughterM">
+
+        </LinearLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Search"
+        android:textColor="#fff"
+        android:layout_marginTop="20pt"
+        android:id="@+id/btsearch"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_background"/>
+
+    </LinearLayout>
+    </ScrollView>
+
+
+    </LinearLayout>
+
+

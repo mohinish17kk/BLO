@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/image_ref"
+            android:adjustViewBounds="true"
+            android:src="@drawable/eciheader"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HOME"
+        android:textSize="10pt"
+        android:textStyle="bold"
+        android:textColor="#004d99"
+        android:paddingRight="5pt"
+        android:paddingLeft="5pt"
+        android:id="@+id/tvhome"
+        android:layout_gravity="right"
+        android:paddingTop="4pt"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ListView
+            android:id="@+id/voterListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="4.0sp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Capture Family GPS Location"
+            android:textColor="#fff"
+            android:layout_marginTop="15pt"
+            android:layout_marginRight="10pt"
+            android:id="@+id/btn_submitform6"
+            android:textSize="9pt"
+            android:padding="5pt"
+            android:background="@drawable/btn_background"/>
+    </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

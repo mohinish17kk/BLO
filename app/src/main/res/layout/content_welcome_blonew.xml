@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="mgov.gov.in.blohybrid.WelcomeBLONew"
+    tools:showIn="@layout/activity_welcome_blonew"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/image_ref"
+            android:adjustViewBounds="true"
+            android:src="@drawable/eciheader"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="4pt"
+        android:paddingRight="4pt">
+
+        <!--<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:textSize="10pt"
+            android:layout_gravity="right"
+            android:paddingLeft="6pt"
+            android:paddingRight="5pt"
+            android:paddingTop="3pt"
+            android:paddingBottom="4pt"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:background="@drawable/btn_background_redclr"/>-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="100">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:id="@+id/tvverion"
+                android:textStyle="bold"
+                android:padding="4pt"
+                android:layout_weight="30"
+                android:layout_gravity="bottom"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="LOGOUT"
+                android:layout_weight="70"
+                android:textSize="10pt"
+                android:textStyle="bold"
+                android:textColor="#FF0000"
+                android:paddingRight="5pt"
+                android:paddingLeft="5pt"
+                android:id="@+id/logout"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:paddingTop="4pt"/>
+
+            <!--<View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="2pt"
+                android:background="#FF0000"/>-->
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Welcome"
+            android:textColor="#FFFFFF"
+            android:textSize="10pt"
+            android:textStyle="bold"
+            android:id="@+id/textView"
+            android:gravity="center"
+            android:background="#AAFF9800"
+            android:layout_gravity="center_horizontal" />
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginBottom="2pt"
+            android:background="#FF9800" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingTop="1pt"
+        android:paddingLeft="4pt"
+        android:paddingRight="4pt"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="33"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorBlue"
+            android:text="State id"
+            android:textSize="9pt"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:id="@+id/tvstateid"
+            android:background="#FF9933"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="33"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorBlue"
+            android:text="AC id"
+            android:textSize="9pt"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:id="@+id/tvacid"
+            android:background="#fff"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="33"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorBlue"
+            android:text="Part id"
+            android:textSize="9pt"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:id="@+id/tvpartid"
+            android:background="#138808"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/image_ref"
+        android:adjustViewBounds="true"
+        android:src="@drawable/notification"
+        android:layout_gravity="right"
+        android:layout_marginTop="2pt"
+        android:paddingRight="4pt"
+        android:paddingLeft="4pt"
+        android:id="@+id/ivnotification"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10pt"
+            android:layout_marginBottom="3pt"
+            android:padding="4pt">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Download Elector List"
+                android:textSize="12pt"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:padding="3pt"
+                android:id="@+id/option1"
+                android:layout_marginTop="5pt"
+                android:background="@drawable/btn_background"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="House To House Verification"
+                android:textSize="12pt"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:padding="3pt"
+                android:id="@+id/option3"
+                android:layout_marginTop="5pt"
+                android:background="@drawable/btn_background"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Revision"
+                android:textSize="12pt"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:padding="3pt"
+                android:id="@+id/option2"
+                android:layout_marginTop="5pt"
+                android:background="@drawable/btn_background"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Capture Adjacent Part No."
+                android:textSize="12pt"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:padding="3pt"
+                android:id="@+id/option11"
+                android:layout_marginTop="5pt"
+                android:background="@drawable/btn_background"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Online Form Filling"
+                android:textSize="12pt"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:padding="3pt"
+                android:id="@+id/option4"
+                android:layout_marginTop="5pt"
+                android:background="@drawable/btn_background"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BLO Register"
+                android:textSize="12pt"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:padding="3pt"
+                android:id="@+id/option5"
+                android:layout_marginTop="5pt"
+                android:background="@drawable/btn_background"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change Password"
+                android:id="@+id/tvchangepassword"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                android:layout_marginTop="5pt"
+                android:layout_marginBottom="5pt"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="180sp"
+        android:minWidth="500sp"
+        android:orientation="vertical"
+        android:layout_marginTop="10sp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/info"
+            android:layout_gravity="center"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/dialogue_important_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10sp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginRight="10sp"
+                    android:gravity="center"
+                    android:text="Voter Service application must be installed to avail online submission feature.\n\nClick OK to download Voter Service Application.\n"
+                    android:textSize="20sp" />
+
+                <!--<View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@android:color/darker_gray"/>-->
+
+            </LinearLayout>
+
+        <!--<View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/darker_gray"/>-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OK"
+                android:background="@drawable/btn_background"
+                android:id="@+id/btnok"
+                android:textColor="#ffffff"
+                android:layout_marginTop="5sp"
+                android:layout_marginRight="10sp"
+                android:layout_marginLeft="5sp"
+                android:layout_marginBottom="15sp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="cancel"
+                android:background="@drawable/btn_background"
+                android:id="@+id/bcancel"
+                android:textColor="#ffffff"
+                android:layout_marginTop="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginBottom="15sp"
+                android:layout_marginLeft="10sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

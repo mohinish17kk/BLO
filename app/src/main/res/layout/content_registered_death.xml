@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="mgov.gov.in.blohybrid.RegisteredDeathActivity"
+    tools:showIn="@layout/activity_registered_death"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/image_ref"
+            android:adjustViewBounds="true"
+            android:src="@drawable/eciheader"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HOME"
+        android:textSize="10pt"
+        android:textStyle="bold"
+        android:textColor="#004d99"
+        android:paddingRight="5pt"
+        android:paddingLeft="5pt"
+        android:id="@+id/tvhome"
+        android:layout_gravity="right"
+        android:paddingTop="4pt"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="4pt"
+        android:paddingRight="4pt">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Registered Death"
+            android:textColor="#FFFFFF"
+            android:textSize="10pt"
+            android:textStyle="bold"
+            android:id="@+id/textView"
+            android:gravity="center"
+            android:background="#AAFF9800"
+            android:layout_gravity="center_horizontal" />
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="3pt"
+            android:background="#FF9800"
+            android:layout_marginBottom="2pt"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="3pt"
+            android:layout_marginBottom="2pt"
+            android:text="Click on the Panel to take action"
+            android:textColor="#0A36CA"
+            android:textSize="8pt"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/registeredDeathListView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="4.0sp"
+            android:layout_marginBottom="1pt"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

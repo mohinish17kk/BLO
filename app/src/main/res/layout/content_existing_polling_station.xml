@@ -1,0 +1,1121 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="mgov.gov.in.blohybrid.ExistingPollingStation"
+    tools:showIn="@layout/activity_existing_polling_station"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/image_ref"
+            android:adjustViewBounds="true"
+            android:src="@drawable/eciheader"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvhome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:paddingLeft="5pt"
+        android:paddingRight="5pt"
+        android:paddingTop="4pt"
+        android:text="@string/Home"
+        android:textColor="#004d99"
+        android:textSize="10pt"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="4pt"
+        android:paddingRight="4pt">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/Existing_Polling_Station"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:id="@+id/textView"
+            android:gravity="center"
+            android:background="#AAFF9800"
+            android:layout_marginTop="2pt"
+            android:layout_gravity="center_horizontal" />
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginBottom="8pt"
+            android:background="#FF9800" />
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Show_Saved_Data"
+                android:layout_marginLeft="3pt"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:layout_marginBottom="5sp"
+                android:background="@drawable/btn_background"
+                android:padding="5pt"
+                android:id="@+id/tvshow"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:src="@drawable/vote_icon"
+                android:id="@+id/ivimage"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Upload_Photo"
+                android:paddingLeft="10pt"
+                android:textSize="10pt"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:layout_gravity="right"
+                android:layout_marginRight="2pt"
+                android:padding="5pt"
+                android:id="@+id/tvuploadphoto"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:text="@string/Mention_exisiting_polling_station_address_below"
+                android:textSize="9pt"
+                android:textColor="@color/colorBlue"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5pt"
+                android:paddingLeft="5pt"
+                android:paddingRight="5pt"
+                android:textStyle="normal"
+                android:gravity="bottom"
+                android:textSize="8pt"
+                android:maxLines="2"
+                android:hint="@string/Flat_House_No_Floor_Building"
+                android:id="@+id/etpollingaddress"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvpollingerror"
+                android:textColor="#FF0000"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2pt"
+                android:paddingLeft="5pt"
+                android:paddingRight="5pt"
+                android:textStyle="normal"
+                android:gravity="bottom"
+                android:textSize="8pt"
+                android:maxLines="2"
+                android:hint="@string/Colony_Street_Locality"
+                android:id="@+id/etpollingaddress2"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvpollingerror2"
+                android:textColor="#FF0000"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2pt"
+                android:paddingLeft="5pt"
+                android:paddingRight="5pt"
+                android:textStyle="normal"
+                android:gravity="bottom"
+                android:textSize="8pt"
+                android:maxLines="2"
+                android:hint="@string/City_State"
+                android:id="@+id/etpollingaddres3"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvpollingerro3"
+                android:textColor="#FF0000"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2pt"
+                android:paddingLeft="5pt"
+                android:paddingRight="5pt"
+                android:textStyle="normal"
+                android:gravity="bottom"
+                android:textSize="8pt"
+                android:hint="@string/Pincode"
+                android:inputType="number"
+                android:maxLength="6"
+                android:maxLines="2"
+                android:id="@+id/etpollingaddress4"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvpollingerror4"
+                android:textColor="#FF0000"/>
+
+            <Spinner
+                android:id="@+id/spinnerBuildingtype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginLeft="2pt"
+                android:background="?attr/editTextBackground"
+                android:spinnerMode="dialog"/>
+
+            <Spinner
+                android:id="@+id/spinnerBuildingPriority"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginLeft="2pt"
+                android:background="?attr/editTextBackground"
+                android:spinnerMode="dialog"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Capture_Polling_Station_GPS_Location"
+                android:textSize="9pt"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:padding="3pt"
+                android:id="@+id/pollinggps"
+                android:layout_marginTop="4pt"
+                android:layout_marginLeft="4pt"
+                android:layout_marginRight="4pt"
+                android:background="@drawable/btn_background"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvfetchedgpslocation"
+                android:layout_marginTop="3pt"
+                android:textColor="@color/colorBlue"
+                android:gravity="center"
+                android:textSize="8pt"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="4pt">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Submit_AMF_survey"
+                    android:textSize="9pt"
+                    android:paddingLeft="5pt"
+                    android:textColor="@color/colorBlue"
+                    android:textStyle="bold"/>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5pt"
+                    android:id="@+id/cbamf"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/llamfsurvey">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingLeft="3pt"
+                    android:layout_marginBottom="2pt"
+                    android:text="Assured Minimum Facilities"
+                    android:textColor="#b32d00"
+                    android:textSize="8pt"
+                    android:textStyle="bold" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@android:color/darker_gray"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="100">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="65"
+                        android:text="Whether ramps have been provided ?"
+                        android:textSize="8pt"
+                        android:textColor="@color/black"
+                        android:paddingRight="5pt"
+                        android:paddingLeft="5pt"
+                        android:layout_gravity="left"
+                        android:paddingTop="4pt"/>
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="17"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:id="@+id/rb13y"/>
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="17"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:id="@+id/rb13n"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="100">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="65"
+                        android:text="Whether drinking water facilities exist in the polling station premises ?"
+                        android:textSize="8pt"
+                        android:textColor="@color/black"
+                        android:paddingRight="5pt"
+                        android:paddingLeft="5pt"
+                        android:layout_gravity="left"
+                        android:paddingTop="4pt"/>
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="17"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:id="@+id/rb9y"/>
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="17"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:id="@+id/rb9n"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="100">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="65"
+                        android:text="Whether the building has Adequate Furniture ?"
+                        android:textSize="8pt"
+                        android:textColor="@color/black"
+                        android:paddingRight="5pt"
+                        android:paddingLeft="5pt"
+                        android:layout_gravity="left"
+                        android:paddingTop="4pt"/>
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="17"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:id="@+id/rb14y"/>
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="17"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:id="@+id/rb14n"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="100">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="65"
+                        android:text="Whether the building has Proper lighting, Fixtures etc ?"
+                        android:textSize="8pt"
+                        android:textColor="@color/black"
+                        android:paddingRight="5pt"
+                        android:paddingLeft="5pt"
+                        android:layout_gravity="left"
+                        android:paddingTop="4pt"/>
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="17"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:id="@+id/rb11y"/>
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="17"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:id="@+id/rb11n"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="100">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="65"
+                        android:text="Whether the PS has Proper signage of Building name and address ?"
+                        android:textSize="8pt"
+                        android:textColor="@color/black"
+                        android:paddingRight="5pt"
+                        android:paddingLeft="5pt"
+                        android:layout_gravity="left"
+                        android:paddingTop="4pt"/>
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="17"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:id="@+id/rb21y"/>
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="17"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:id="@+id/rb21n"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="100">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="65"
+                        android:text="Whether the building has Toilet(Male/Female) ?"
+                        android:textSize="8pt"
+                        android:textColor="@color/black"
+                        android:paddingRight="5pt"
+                        android:paddingLeft="5pt"
+                        android:layout_gravity="left"
+                        android:paddingTop="4pt"/>
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="17"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:id="@+id/rb12y"/>
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="17"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:id="@+id/rb12n"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="100">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="65"
+                        android:text="Whether Separate door for Entry and Exit available ?"
+                        android:textSize="8pt"
+                        android:textColor="@color/black"
+                        android:paddingRight="5pt"
+                        android:paddingLeft="5pt"
+                        android:layout_gravity="left"
+                        android:paddingTop="4pt"/>
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="17"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:id="@+id/rb7y"/>
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="17"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:id="@+id/rb7n"/>
+                </LinearLayout>
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@android:color/darker_gray"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingLeft="3pt"
+                    android:layout_marginBottom="2pt"
+                    android:text="Extended Minimum Facilities"
+                    android:textColor="#b32d00"
+                    android:textSize="8pt"
+                    android:textStyle="bold" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@android:color/darker_gray"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="100">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="65"
+                        android:text="Whether the Polling booth area is more than 20 sq. mts. "
+                        android:textSize="8pt"
+                        android:textColor="@color/black"
+                        android:paddingRight="5pt"
+                        android:paddingLeft="5pt"
+                        android:layout_gravity="left"
+                        android:paddingTop="4pt"/>
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="17"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:id="@+id/rb1y"/>
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="17"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:id="@+id/rb1n"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="100">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="65"
+                        android:text="Whether the building is dilapidated or dangerous? "
+                        android:textSize="8pt"
+                        android:textColor="@color/black"
+                        android:paddingRight="5pt"
+                        android:paddingLeft="5pt"
+                        android:layout_gravity="left"
+                        android:paddingTop="4pt"/>
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="17"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:id="@+id/rb2y"/>
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="17"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:id="@+id/rb2n"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="100">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="65"
+                        android:text="Whether polling station is in Govt building/Premisis ? "
+                        android:textSize="8pt"
+                        android:textColor="@color/black"
+                        android:paddingRight="5pt"
+                        android:paddingLeft="5pt"
+                        android:layout_gravity="left"
+                        android:paddingTop="4pt"/>
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="17"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:id="@+id/rb3y"/>
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="17"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:id="@+id/rb3n"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="100">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="65"
+                        android:text="Whether polling station is located in a institution/religious place ?"
+                        android:textSize="8pt"
+                        android:textColor="@color/black"
+                        android:paddingRight="5pt"
+                        android:paddingLeft="5pt"
+                        android:layout_gravity="left"
+                        android:paddingTop="4pt"/>
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="17"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:id="@+id/rb4y"/>
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="17"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:id="@+id/rb4n"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="100">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="65"
+                        android:text="Whether polling station is in School/College building ?"
+                        android:textSize="8pt"
+                        android:textColor="@color/black"
+                        android:paddingRight="5pt"
+                        android:paddingLeft="5pt"
+                        android:layout_gravity="left"
+                        android:paddingTop="4pt"/>
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="17"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:id="@+id/rb5y"/>
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="17"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:id="@+id/rb5n"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="100">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="65"
+                        android:text="Whether polling station is on ground floor ?"
+                        android:textSize="8pt"
+                        android:textColor="@color/black"
+                        android:paddingRight="5pt"
+                        android:paddingLeft="5pt"
+                        android:layout_gravity="left"
+                        android:paddingTop="4pt"/>
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="17"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:id="@+id/rb6y"/>
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="17"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:id="@+id/rb6n"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="100">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="65"
+                        android:text="Any political party office is situated within 200 meters of PS premises ?"
+                        android:textSize="8pt"
+                        android:textColor="@color/black"
+                        android:paddingRight="5pt"
+                        android:paddingLeft="5pt"
+                        android:layout_gravity="left"
+                        android:paddingTop="4pt"/>
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="17"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:id="@+id/rb8y"/>
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="17"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:id="@+id/rb8n"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="100">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="65"
+                        android:text="Whether the building has Electricity Supply ?"
+                        android:textSize="8pt"
+                        android:textColor="@color/black"
+                        android:paddingRight="5pt"
+                        android:paddingLeft="5pt"
+                        android:layout_gravity="left"
+                        android:paddingTop="4pt"/>
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="17"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:id="@+id/rb10y"/>
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="17"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:id="@+id/rb10n"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="100">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="65"
+                        android:text="Whether there is a shade/shelter for protection from sun/rain etc. ?"
+                        android:textSize="8pt"
+                        android:textColor="@color/black"
+                        android:paddingRight="5pt"
+                        android:paddingLeft="5pt"
+                        android:layout_gravity="left"
+                        android:paddingTop="4pt"/>
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="17"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:id="@+id/rb15y"/>
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="17"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:id="@+id/rb15n"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="100">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="65"
+                        android:text="Whether there is a Proper road connectivity ?"
+                        android:textSize="8pt"
+                        android:textColor="@color/black"
+                        android:paddingRight="5pt"
+                        android:paddingLeft="5pt"
+                        android:layout_gravity="left"
+                        android:paddingTop="4pt"/>
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="17"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:id="@+id/rb16y"/>
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="17"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:id="@+id/rb16n"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="100">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="65"
+                        android:text="Whether voters have to cross river/valley/ravine or natural obstacle to reach PS ?"
+                        android:textSize="8pt"
+                        android:textColor="@color/black"
+                        android:paddingRight="5pt"
+                        android:paddingLeft="5pt"
+                        android:layout_gravity="left"
+                        android:paddingTop="4pt"/>
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="17"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:id="@+id/rb17y"/>
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="17"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:id="@+id/rb17n"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="100">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="65"
+                        android:text="Whether the polling station has Landline Telephone/fax Connection ?"
+                        android:textSize="8pt"
+                        android:textColor="@color/black"
+                        android:paddingRight="5pt"
+                        android:paddingLeft="5pt"
+                        android:layout_gravity="left"
+                        android:paddingTop="4pt"/>
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="17"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:id="@+id/rb18y"/>
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="17"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:id="@+id/rb18n"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="100">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="65"
+                        android:text="Whether the polling station has Mobile connectivity ?"
+                        android:textSize="8pt"
+                        android:textColor="@color/black"
+                        android:paddingRight="5pt"
+                        android:paddingLeft="5pt"
+                        android:layout_gravity="left"
+                        android:paddingTop="4pt"/>
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="17"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:id="@+id/rb19y"/>
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="17"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:id="@+id/rb19n"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="100">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="65"
+                        android:text="Whether the polling station has Internet facility ?"
+                        android:textSize="8pt"
+                        android:textColor="@color/black"
+                        android:paddingRight="5pt"
+                        android:paddingLeft="5pt"
+                        android:layout_gravity="left"
+                        android:paddingTop="4pt"/>
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="17"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:id="@+id/rb20y"/>
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="17"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:id="@+id/rb20n"/>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="100">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="65"
+                        android:text="Whether the polling station is Within LWE/insurgency affected area ?"
+                        android:textSize="8pt"
+                        android:textColor="@color/black"
+                        android:paddingRight="5pt"
+                        android:paddingLeft="5pt"
+                        android:layout_gravity="left"
+                        android:paddingTop="4pt"/>
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="17"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:id="@+id/rb22y"/>
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="17"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:id="@+id/rb22n"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="100">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="65"
+                        android:text="Whether the polling station is Within forest/semi-forest area ?"
+                        android:textSize="8pt"
+                        android:textColor="@color/black"
+                        android:paddingRight="5pt"
+                        android:paddingLeft="5pt"
+                        android:layout_gravity="left"
+                        android:paddingTop="4pt"/>
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="17"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:id="@+id/rb23y"/>
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="17"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:id="@+id/rb23n"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="100">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="65"
+                        android:text="Whether the polling station is vulnerable critical location ?"
+                        android:textSize="8pt"
+                        android:textColor="@color/black"
+                        android:paddingRight="5pt"
+                        android:paddingLeft="5pt"
+                        android:layout_gravity="left"
+                        android:paddingTop="4pt"/>
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="17"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:id="@+id/rb24y"/>
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="17"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:id="@+id/rb24n"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="100">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="65"
+                        android:text="Whether the polling station is Sensitive/hyper-sensitive ?"
+                        android:textSize="8pt"
+                        android:textColor="@color/black"
+                        android:paddingRight="5pt"
+                        android:paddingLeft="5pt"
+                        android:layout_gravity="left"
+                        android:paddingTop="4pt"/>
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="17"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:id="@+id/rb25y"/>
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="17"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:id="@+id/rb25n"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Submit"
+                android:textColor="#fff"
+                android:layout_marginTop="15pt"
+                android:layout_marginRight="10pt"
+                android:layout_marginBottom="5pt"
+                android:id="@+id/btn_submitform6"
+                android:layout_gravity="right"
+                android:padding="5pt"
+                android:background="@drawable/btn_background"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+
+

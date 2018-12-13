@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="200sp"
+        android:minWidth="500sp"
+        android:orientation="vertical"
+        android:layout_marginTop="2sp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/warning"
+            android:layout_gravity="center"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="5pt"
+            android:layout_height="2dp"
+            android:background="@android:color/darker_gray"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="5pt"
+            android:id="@+id/llverifiedNotVerified">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Verified"
+                android:textColor="#004d99"
+                android:textSize="8pt"
+                android:id="@+id/rbverified"/>
+
+            <RadioButton
+                android:id="@+id/rbnotverified"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8pt"
+                android:text="Not Verified"
+                android:textColor="#004d99"
+                android:textSize="8pt" />
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/remark"
+            android:hint="Remark"
+            android:visibility="gone"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="submit"
+            android:background="@drawable/btn_background"
+            android:layout_gravity="right"
+            android:id="@+id/btnsubmit"
+            android:textColor="#ffffff"
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="5sp"
+            android:layout_marginRight="15pt"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="5pt"
+            android:layout_height="2dp"
+            android:background="@android:color/darker_gray"/>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

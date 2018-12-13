@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="mgov.gov.in.blohybrid.OverseasVoter"
+    tools:showIn="@layout/activity_overseas_voter"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/image_ref"
+            android:adjustViewBounds="true"
+            android:src="@drawable/eciheader"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvhome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:paddingLeft="5pt"
+        android:paddingRight="5pt"
+        android:paddingTop="4pt"
+        android:text="HOME"
+        android:textColor="#004d99"
+        android:textSize="10pt"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="4pt"
+        android:paddingRight="4pt">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Overseas Voter"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:id="@+id/textView"
+            android:gravity="center"
+            android:background="#AAFF9800"
+            android:layout_marginTop="2pt"
+            android:layout_gravity="center_horizontal" />
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginBottom="8pt"
+            android:background="#FF9800" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="3pt"
+            android:layout_marginRight="2pt">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Show Saved Data"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:layout_marginBottom="5sp"
+                android:background="@drawable/btn_background"
+                android:padding="5pt"
+                android:id="@+id/tvshow"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Is any one in the family lives out of India ? "
+                android:textColor="@color/colorBlue"
+                android:textSize="10pt"
+                android:textStyle="bold"
+                android:id="@+id/tvos"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="3pt">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:textColor="#004d99"
+                    android:textSize="9pt"
+                    android:textStyle="bold"
+                    android:id="@+id/rbyes"/>
+
+                <RadioButton
+                    android:id="@+id/rbno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8pt"
+                    android:text="No"
+                    android:textStyle="bold"
+                    android:textColor="#004d99"
+                    android:textSize="9pt" />
+
+            </LinearLayout>
+
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enrolled Overseas Elector"
+                    android:textColor="#004d99"
+                    android:textSize="9pt"
+                    android:textStyle="bold"
+                    android:id="@+id/rbenrolled"
+                    android:visibility="visible"/>
+
+                <RadioButton
+                    android:id="@+id/rbunenrolled"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Unenrolled Overseas Elector"
+                    android:textStyle="bold"
+                    android:textColor="#004d99"
+                    android:textSize="9pt"
+                    android:layout_marginTop="2pt"
+                    android:visibility="visible"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="2pt"
+                android:id="@+id/llserial">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Serial Number :-"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="9pt"
+                    android:layout_marginTop="9pt"
+                    android:textStyle="bold" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_option3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="8pt"
+                        android:hint="Serial Number"
+                        android:id="@+id/etserial"
+                        android:layout_marginLeft="3pt"
+                        android:maxLength="10"
+                        android:inputType="number"/>
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="2pt"
+                android:id="@+id/llpassport">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Passport Number :-"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="9pt"
+                    android:layout_marginTop="9pt"
+                    android:textStyle="bold" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_option1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="8pt"
+                        android:hint="Passport Number"
+                        android:id="@+id/etpassport"
+                        android:layout_marginLeft="3pt"
+                        android:maxLength="15"/>
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="2pt"
+                android:layout_marginRight="2pt"
+                android:layout_marginTop="4pt"
+                android:id="@+id/lldob">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date Of Birth :-"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="9pt"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btdobage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4pt"
+                    android:text="@string/Select_DOB"
+                    android:inputType="date"
+                    android:textColor="@color/black"
+                    android:textSize="8pt" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="* Below all fields are non mandatory"
+                android:textColor="@color/colorAccent"
+                android:visibility="gone"
+                android:id="@+id/tvhint"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="2pt"
+                android:layout_marginRight="2pt"
+                android:layout_marginTop="4pt"
+                android:id="@+id/llemail">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email Id :-"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="9pt"
+                    android:layout_marginTop="9pt"
+                    android:textStyle="bold" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_option6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="8pt"
+                        android:hint="abc@gmail.com"
+                        android:id="@+id/etemail"
+                        android:layout_marginLeft="3pt"
+                        android:inputType="textEmailAddress"/>
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="2pt"
+                android:id="@+id/llcontact"
+                android:weightSum="100">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="25"
+                    android:layout_height="wrap_content"
+                    android:text="Contact:- "
+                    android:textColor="@color/colorBlue"
+                    android:textSize="9pt"
+                    android:layout_marginTop="9pt"
+                    android:textStyle="bold" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_option9"
+                    android:layout_width="0dp"
+                    android:layout_weight="20"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="8pt"
+                        android:hint="Country Code"
+                        android:id="@+id/etareacode"
+                        android:inputType="phone"
+                        android:layout_marginLeft="3pt"
+                        android:maxLength="4"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_option2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="55">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="8pt"
+                        android:hint="Contact Number"
+                        android:id="@+id/etmobile"
+                        android:inputType="phone"
+                        android:layout_marginLeft="3pt"
+                        android:maxLength="18"/>
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone Type :- "
+                android:textColor="@color/colorBlue"
+                android:textSize="10pt"
+                android:textStyle="bold"
+                android:layout_marginTop="2pt"
+                android:id="@+id/tvphonetype"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="3pt"
+                android:id="@+id/llphonetype">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SmartPhone "
+                    android:textColor="#004d99"
+                    android:textSize="8pt"
+                    android:textStyle="bold"
+                    android:id="@+id/rbsmart"/>
+
+                <RadioButton
+                    android:id="@+id/rbfeature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Feature "
+                    android:textStyle="bold"
+                    android:textColor="#004d99"
+                    android:textSize="8pt"
+                    android:layout_marginLeft="2pt"/>
+
+                <RadioButton
+                    android:id="@+id/rblandline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Landline"
+                    android:textStyle="bold"
+                    android:textColor="#004d99"
+                    android:textSize="8pt"
+                    android:layout_marginLeft="2pt"/>
+
+            </LinearLayout>
+
+
+            <Spinner
+                android:id="@+id/spinnerPhonetype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginLeft="2pt"
+                android:background="?attr/editTextBackground"
+                android:spinnerMode="dialog"
+                android:visibility="gone"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="submit"
+                android:background="@drawable/btn_background"
+                android:layout_gravity="right"
+                android:id="@+id/btnsubmit"
+                android:textColor="#ffffff"
+                android:layout_marginTop="5sp"
+                android:layout_marginBottom="5sp"
+                android:layout_marginRight="10sp"/>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

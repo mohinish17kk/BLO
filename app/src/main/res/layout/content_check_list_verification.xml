@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="mgov.gov.in.blohybrid.CheckListVerificationActivity"
+    tools:showIn="@layout/activity_check_list_verification"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/image_ref"
+            android:adjustViewBounds="true"
+            android:src="@drawable/eciheader"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Home"
+        android:textSize="10pt"
+        android:textStyle="bold"
+        android:textColor="#004d99"
+        android:paddingRight="5pt"
+        android:paddingLeft="5pt"
+        android:id="@+id/tvhome"
+        android:layout_gravity="right"
+        android:paddingTop="4pt"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="4pt"
+        android:paddingRight="4pt">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/Checklist_Verification"
+            android:textColor="#FFFFFF"
+            android:textSize="10pt"
+            android:textStyle="bold"
+            android:id="@+id/textView"
+            android:gravity="center"
+            android:background="#AAFF9800"
+            android:layout_gravity="center_horizontal" />
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="3pt"
+            android:background="#FF9800"
+            android:layout_marginBottom="2pt"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/checklist_ListView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="4.0sp"
+            android:layout_marginBottom="1pt"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/tvfetchedgpslocation"
+            android:layout_marginTop="2pt"
+            android:layout_marginBottom="2pt"
+            android:textColor="@color/colorBlue"
+            android:gravity="center"
+            android:textSize="8pt"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Capture Family GPS Location"
+                android:textColor="#fff"
+                android:visibility="gone"
+                android:layout_marginRight="5pt"
+                android:id="@+id/btn_submitform6"
+                android:layout_marginBottom="5pt"
+                android:textSize="6pt"
+                android:padding="6pt"
+                android:gravity="center"
+                android:layout_marginLeft="5pt"
+                android:background="@drawable/btn_background"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:visibility="gone"
+                android:textColor="#fff"
+                android:layout_marginRight="5pt"
+                android:id="@+id/btn_submit"
+                android:layout_marginBottom="5pt"
+                android:gravity="center"
+                android:textSize="6pt"
+                android:padding="5pt"
+                android:background="@drawable/btn_background"/>
+        </LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="skip family gps location"
+            android:textColor="#fff"
+            android:visibility="gone"
+            android:layout_marginRight="5pt"
+            android:id="@+id/btn_skip"
+            android:layout_marginBottom="2pt"
+            android:textSize="6pt"
+            android:padding="5pt"
+            android:gravity="center"
+            android:layout_marginLeft="5pt"
+            android:background="@drawable/btn_background"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

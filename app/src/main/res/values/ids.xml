@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="s" />
+
+
+    <item type="id" name="ud1" />
+    <item type="id" name="ud2" />
+    <item type="id" name="ud3" />
+    <item type="id" name="ud4" />
+    <item type="id" name="ud5" />
+    <item type="id" name="ud6" />
+    <item type="id" name="ud7" />
+    <item type="id" name="ud8" />
+    <item type="id" name="ud9" />
+    <item type="id" name="ud10" />
+
+    <item type="id" name="md1" />
+    <item type="id" name="md2" />
+    <item type="id" name="md3" />
+    <item type="id" name="md4" />
+    <item type="id" name="md5" />
+    <item type="id" name="md6" />
+    <item type="id" name="md7" />
+    <item type="id" name="md8" />
+    <item type="id" name="md9" />
+    <item type="id" name="md10" />
+</resources>

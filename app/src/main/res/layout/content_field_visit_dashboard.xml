@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="mgov.gov.in.blohybrid.FieldVisitDashboard"
+    tools:showIn="@layout/activity_field_visit_dashboard"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/image_ref"
+            android:adjustViewBounds="true"
+            android:src="@drawable/eciheader"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HOME"
+        android:textSize="10pt"
+        android:textStyle="bold"
+        android:textColor="#004d99"
+        android:paddingRight="5pt"
+        android:paddingLeft="5pt"
+        android:id="@+id/tvhome"
+        android:layout_gravity="right"
+        android:paddingTop="4pt"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="4pt"
+        android:paddingRight="4pt">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#AAFF9800">
+
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.8"
+                android:background="#AAFF9800"
+                android:gravity="center"
+                android:text="Field Visit Dashboard"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FFFFFF"
+                android:textSize="10pt"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView_refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.2"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_action_refresh" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="3pt"
+            android:background="#FF9800" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="5pt"
+                android:paddingTop="4pt"
+                android:text="Total Count:- "
+                android:textColor="#303F9F"
+                android:textSize="10pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvcount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="5pt"
+                android:paddingTop="4pt"
+                android:text="---"
+                android:textSize="10pt"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"
+            android:layout_marginBottom="1pt">
+
+            <LinearLayout
+                android:id="@+id/viewdetailslayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="4pt"
+                android:layout_marginTop="4pt"
+                android:orientation="vertical">
+
+                <!--<TableLayout
+                    android:id="@+id/tableLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0pt"
+                    android:background="@color/colorBlack"></TableLayout>-->
+                <TableLayout
+                    android:id="@+id/tableLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5pt"
+                    android:background="@color/colorWhiteGray">
+
+                    <!--<TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="1pt">
+
+                <TextView
+                    android:id="@+id/textView38"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1pt"
+                    android:layout_weight="1"
+                    android:background="@color/colorWhite"
+                    android:padding="3pt"
+                    android:text="Date"
+                    android:textColor="@color/colorBlue"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView39"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1pt"
+                    android:layout_weight="1"
+                    android:background="@color/colorTotal"
+                    android:gravity="center"
+                    android:padding="3pt"
+                    android:text="Work Done"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:id="@+id/textView40"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1pt"
+                    android:layout_weight="1"
+                    android:background="@color/colorApproved"
+                    android:gravity="center"
+                    android:padding="3pt"
+                    android:text="Pending Work"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:id="@+id/textView41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1pt"
+                    android:layout_weight="1"
+                    android:background="@color/colorRejected"
+                    android:gravity="center"
+                    android:padding="3pt"
+                    android:text="Pushed Record"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:id="@+id/textView42"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1pt"
+                    android:layout_marginRight="1pt"
+                    android:layout_weight="1"
+                    android:background="@color/colorPending"
+                    android:gravity="center"
+                    android:padding="3pt"
+                    android:text="Pushed TimeStamp"
+                    android:textColor="@color/colorBlack" />
+            </TableRow>-->
+
+                    <!--<TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="1pt">
+
+                <TextView
+                    android:id="@+id/textView43"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1pt"
+                    android:layout_weight="1"
+                    android:background="@color/colorWhite"
+                    android:padding="3pt"
+                    android:text="11/03/2018"
+                    android:textColor="@color/colorBlue"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView44"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1pt"
+                    android:layout_weight="1"
+                    android:background="@color/colorTotal"
+                    android:gravity="center"
+                    android:padding="3pt"
+                    android:text="10"
+                    android:textColor="@color/colorBlue" />
+
+                <TextView
+                    android:id="@+id/textView45"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1pt"
+                    android:layout_weight="1"
+                    android:background="@color/colorApproved"
+                    android:gravity="center"
+                    android:padding="3pt"
+                    android:text="140"
+                    android:textColor="@color/colorBlue" />
+
+                <TextView
+                    android:id="@+id/textView46"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1pt"
+                    android:layout_weight="1"
+                    android:background="@color/colorRejected"
+                    android:gravity="center"
+                    android:padding="3pt"
+                    android:text=" - "
+                    android:textColor="@color/colorBlue" />
+
+                <TextView
+                    android:id="@+id/textView47"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1pt"
+                    android:layout_marginRight="1pt"
+                    android:layout_weight="1"
+                    android:background="@color/colorPending"
+                    android:gravity="center"
+                    android:padding="3pt"
+                    android:text=" - "
+                    android:textColor="@color/colorBlue" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="1pt">
+
+                <TextView
+                    android:id="@+id/textView48"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1pt"
+                    android:layout_weight="1"
+                    android:background="@color/colorWhite"
+                    android:padding="3pt"
+                    android:text="12/03/2018"
+                    android:textColor="@color/colorBlue"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView49"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1pt"
+                    android:layout_weight="1"
+                    android:background="@color/colorTotal"
+                    android:gravity="center"
+                    android:padding="3pt"
+                    android:text="20"
+                    android:textColor="@color/colorBlue" />
+
+                <TextView
+                    android:id="@+id/textView50"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1pt"
+                    android:layout_weight="1"
+                    android:background="@color/colorApproved"
+                    android:gravity="center"
+                    android:padding="3pt"
+                    android:text="120"
+                    android:textColor="@color/colorBlue" />
+
+                <TextView
+                    android:id="@+id/textView51"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1pt"
+                    android:layout_weight="1"
+                    android:background="@color/colorRejected"
+                    android:gravity="center"
+                    android:padding="3pt"
+                    android:text="15"
+                    android:textColor="@color/colorBlue" />
+
+                <TextView
+                    android:id="@+id/textView52"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1pt"
+                    android:layout_marginRight="1pt"
+                    android:layout_weight="1"
+                    android:background="@color/colorPending"
+                    android:gravity="center"
+                    android:padding="3pt"
+                    android:text="12/03/2018/ 20:18:24"
+                    android:textColor="@color/colorBlue" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="1pt">
+
+                <TextView
+                    android:id="@+id/textView53"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1pt"
+                    android:layout_weight="1"
+                    android:background="@color/colorWhite"
+                    android:padding="3pt"
+                    android:text="13/03/2018"
+                    android:textColor="@color/colorBlue"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView54"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1pt"
+                    android:layout_weight="1"
+                    android:background="@color/colorTotal"
+                    android:gravity="center"
+                    android:padding="3pt"
+                    android:text="20"
+                    android:textColor="@color/colorBlue" />
+
+                <TextView
+                    android:id="@+id/textView55"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1pt"
+                    android:layout_weight="1"
+                    android:background="@color/colorApproved"
+                    android:gravity="center"
+                    android:padding="3pt"
+                    android:text="120"
+                    android:textColor="@color/colorBlue" />
+
+                <TextView
+                    android:id="@+id/textView56"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1pt"
+                    android:layout_weight="1"
+                    android:background="@color/colorRejected"
+                    android:gravity="center"
+                    android:padding="3pt"
+                    android:text="15"
+                    android:textColor="@color/colorBlue" />
+
+                <TextView
+                    android:id="@+id/textView57"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1pt"
+                    android:layout_marginRight="1pt"
+                    android:layout_weight="1"
+                    android:background="@color/colorPending"
+                    android:gravity="center"
+                    android:padding="3pt"
+                    android:text="12/03/2018/ 20:18:24"
+                    android:textColor="@color/colorBlue" />
+            </TableRow>-->
+
+
+                </TableLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"
+            android:layout_marginTop="2pt"
+            android:layout_marginBottom="2pt">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3pt"
+                android:layout_marginTop="1pt"
+                android:orientation="vertical"
+                android:padding="4pt">
+
+                <TextView
+                    android:id="@+id/tvfldvst"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_marginTop="20sp"
+                    android:background="@drawable/btn_background"
+                    android:gravity="center"
+                    android:padding="5pt"
+                    android:text="Family Detail Search"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvpush"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_marginTop="10sp"
+                    android:background="@drawable/btn_background"
+                    android:gravity="center"
+                    android:padding="5pt"
+                    android:text="Push Data"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvpending"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_marginTop="10sp"
+                    android:background="@drawable/btn_background"
+                    android:gravity="center"
+                    android:padding="5pt"
+                    android:text="View All Pending Voters"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="2pt"/>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

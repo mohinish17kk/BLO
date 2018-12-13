@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="mgov.gov.in.blohybrid.ToBeQualified"
+    tools:showIn="@layout/activity_to_be_qualified"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/image_ref"
+            android:adjustViewBounds="true"
+            android:src="@drawable/eciheader"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvhome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:paddingLeft="5pt"
+        android:paddingRight="5pt"
+        android:paddingTop="4pt"
+        android:text="HOME"
+        android:textColor="#004d99"
+        android:textSize="10pt"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="4pt"
+        android:paddingRight="4pt">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Future Voter"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:id="@+id/textView"
+            android:gravity="center"
+            android:background="#AAFF9800"
+            android:layout_marginTop="2pt"
+            android:layout_gravity="center_horizontal" />
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginBottom="8pt"
+            android:background="#FF9800" />
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Saved Data"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:layout_marginBottom="5sp"
+            android:background="@drawable/btn_background"
+            android:padding="5pt"
+            android:id="@+id/tvshow"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="2pt"
+            android:id="@+id/llserial"
+            android:layout_marginLeft="3pt"
+            android:layout_marginRight="2pt">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name :-"
+                android:textColor="@color/colorBlue"
+                android:textSize="9pt"
+                android:layout_marginTop="9pt"
+                android:textStyle="bold" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_option3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="8pt"
+                    android:hint="Name"
+                    android:id="@+id/etname"
+                    android:layout_marginLeft="3pt"/>
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="100"
+            android:layout_marginTop="4pt">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginTop="4pt">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="S/O"
+                    android:textStyle="bold"
+                    android:textColor="#004d99"
+                    android:textSize="8pt"
+                    android:id="@+id/rbso"/>
+
+                <RadioButton
+                    android:id="@+id/rbdo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="D/O"
+                    android:textColor="#004d99"
+                    android:textSize="8pt" />
+
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_option4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="8pt"
+                    android:hint="Father's Name"
+                    android:id="@+id/etfathername"
+                    android:layout_marginLeft="3pt"/>
+            </android.support.design.widget.TextInputLayout>
+
+      </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="2pt"
+            android:layout_marginLeft="3pt"
+            android:layout_marginRight="2pt"
+            android:layout_marginTop="4pt">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date Of Birth :-"
+                android:textColor="@color/colorBlue"
+                android:textSize="9pt"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btdobage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4pt"
+                android:text="@string/Select_DOB"
+                android:inputType="date"
+                android:textColor="@color/black"
+                android:textSize="8pt" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/cbstudent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#004d99"
+            android:text="Whether Student or Not [Y/N]"
+            android:textStyle="bold"
+            android:textSize="8pt"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_option6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="8pt"
+                android:hint="Student Address"
+                android:id="@+id/etstudentaddress"
+                android:layout_marginLeft="3pt"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <CheckBox
+            android:id="@+id/cbssrform6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#004d99"
+            android:text="Whether form 6 collected during claims and objection period of SSR 2019"
+            android:textStyle="bold"
+            android:textSize="8pt"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_option7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="8pt"
+                android:hint="If yes then provide form reference no."
+                android:id="@+id/etforref"
+                android:layout_marginLeft="3pt"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="2pt"
+            android:layout_marginLeft="3pt"
+            android:layout_marginRight="2pt"
+            android:layout_marginTop="4pt">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender :-"
+                android:textColor="@color/colorBlue"
+                android:textSize="9pt"
+                android:textStyle="bold"
+                android:layout_marginRight="4pt"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:textColor="#004d99"
+                android:textSize="8pt"
+                android:id="@+id/rbmale"/>
+
+            <RadioButton
+                android:id="@+id/rbfemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5pt"
+                android:text="Female"
+                android:textColor="#004d99"
+                android:textSize="8pt" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tverror"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:text="Fill all detail correctly"
+            android:textColor="#b30000" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textColor="#fff"
+            android:layout_marginTop="20pt"
+            android:id="@+id/btsearch"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_background"/>
+
+
+
+
+
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

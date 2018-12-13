@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mgov.gov.in.blohybrid">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!--/>-->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ChangePassword"
+            android:label="@string/title_activity_change_password"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NoNetwork"
+            android:label="@string/title_activity_no_network"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".WelcomeBLO"
+            android:label="@string/title_activity_welcome_blo"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="com.ecip.msdp.ecitest1.Home" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            />
+        </activity>
+        <activity
+            android:name=".FieldVisitSearch"
+            android:label="@string/title_activity_field_visit"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FieldVisit"
+            android:label="@string/title_activity_field_visit"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BloReport"
+            android:label="@string/title_activity_blo_report"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DirectSubmission"
+            android:label="@string/title_activity_new_voter"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".VoterFullDetail"
+            android:label="@string/title_activity_voter_full_detail"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".WelcomeBLONew"
+            android:label="@string/title_activity_welcome_blonew"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".OverseasVoter"
+            android:label="@string/title_activity_overseas_voter"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PossiblePoolingStation"
+            android:label="@string/title_activity_possible_pooling_station"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PostOfficeGPSLocation"
+            android:label="@string/title_activity_post_office_gpslocation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LeftOverVoter"
+            android:label="@string/title_activity_left_over_voter"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ToBeQualified"
+            android:label="@string/title_activity_to_be_qualified"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".VoterListFamily"
+            android:label="@string/title_activity_voter_list_family"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ExistingPollingStation"
+            android:label="@string/title_activity_existing_polling_station"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FieldVisitDashboard"
+            android:label="@string/title_activity_field_visit_dashboard"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RevisionActivity"
+            android:label="@string/title_activity_revision"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CheckListVerificationActivity"
+            android:label="@string/title_activity_check_list_verification"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LogicalErrorActivity"
+            android:label="@string/title_activity_logical_error"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DSEActivity"
+            android:label="@string/title_activity_dse"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RegisteredDeathActivity"
+            android:label="@string/title_activity_registered_death"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MigrationVerifyActivity"
+            android:label="@string/title_activity_migration_verify"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BloRegisterActivity"
+            android:label="@string/title_activity_blo_register"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LogicalErrorListFamily"
+            android:label="@string/title_activity_logical_error_list_family"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AuxiliaryPollingStation"
+            android:label="@string/title_activity_auxiliary_polling_station"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PoliceGPSLocation"
+            android:label="@string/title_activity_police_gpslocation"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HealthCareCentre"
+            android:label="@string/title_activity_health_care_centre"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Form8"
+            android:label="@string/title_activity_form8"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Form6"
+            android:label="@string/title_activity_form6"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Form6a"
+            android:label="@string/title_activity_form6a"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Form7"
+            android:label="@string/title_activity_form7"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Form8a"
+            android:label="@string/title_activity_form8a"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DSESubActivity"
+            android:label="@string/title_activity_dsesub"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Rationalization"
+            android:label="@string/title_activity_rationalization"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NotificationActivity"
+            android:label="@string/title_activity_notification"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BLOStatements"
+            android:label="@string/title_activity_blostatements"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Statement10FillDetail"
+            android:label="@string/title_activity_statement10_fill_detail"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UnenrolledActivity"
+            android:label="@string/title_activity_unenrolled"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Verification_RD_RME_PS"
+            android:label="@string/title_activity_verification__rd__rme__ps"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

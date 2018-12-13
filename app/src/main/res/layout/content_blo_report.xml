@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="mgov.gov.in.blohybrid.BloReport"
+    tools:showIn="@layout/activity_blo_report"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/image_ref"
+            android:adjustViewBounds="true"
+            android:src="@drawable/eciheader"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvhome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:paddingLeft="5pt"
+        android:paddingRight="5pt"
+        android:paddingTop="4pt"
+        android:text="@string/Home"
+        android:textColor="#004d99"
+        android:textSize="10pt"
+        android:textStyle="bold" />
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="4pt"
+            android:paddingRight="4pt">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/BLO_Special_Drive"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:id="@+id/textView"
+                android:gravity="center"
+                android:background="#AAFF9800"
+                android:layout_marginTop="2pt"
+                android:layout_gravity="center_horizontal" />
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginBottom="4pt"
+                android:background="#FF9800" />
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="100">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="70"
+        android:text="@string/Total_Voters_Population"
+        android:textSize="10pt"
+        android:textStyle="bold"
+        android:textColor="#084D76"
+        android:paddingRight="5pt"
+        android:paddingLeft="5pt"
+        android:layout_gravity="left"
+        android:paddingTop="4pt"/>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_option1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="30">
+                <EditText
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:textSize="8pt"
+                   android:paddingRight="5pt"
+                   android:paddingLeft="5pt"
+                   android:paddingTop="4pt"
+                   android:hint="Ex: 100"
+                   android:id="@+id/etoption1"
+                    android:inputType="number"/>
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="100">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="70"
+            android:layout_height="wrap_content"
+            android:text="@string/Total_Male_Voter"
+            android:textSize="10pt"
+            android:textStyle="bold"
+            android:textColor="#084D76"
+            android:paddingRight="5pt"
+            android:paddingLeft="5pt"
+            android:layout_gravity="left"
+            android:paddingTop="4pt"/>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_option2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="30">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="8pt"
+                android:paddingRight="5pt"
+                android:paddingLeft="5pt"
+                android:paddingTop="4pt"
+                android:hint="Ex: 49"
+                android:id="@+id/etoption2"
+                android:inputType="number"/>
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="100"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_weight="70"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:paddingLeft="5pt"
+            android:paddingRight="5pt"
+            android:paddingTop="4pt"
+            android:text="@string/Total_Female_Voter"
+            android:textColor="#084D76"
+            android:textSize="10pt"
+            android:textStyle="bold" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_option3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="30">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="8pt"
+                android:paddingRight="5pt"
+                android:paddingLeft="5pt"
+                android:paddingTop="4pt"
+                android:hint="Ex: 47"
+                android:id="@+id/etoption3"
+                android:inputType="number"/>
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="100">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="70"
+            android:layout_height="wrap_content"
+            android:text="@string/Third_Gender_Voter"
+            android:textSize="10pt"
+            android:textStyle="bold"
+            android:textColor="#084D76"
+            android:paddingRight="5pt"
+            android:paddingLeft="5pt"
+            android:layout_gravity="left"
+            android:paddingTop="4pt"/>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_option4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="30">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="8pt"
+                android:paddingRight="5pt"
+                android:paddingLeft="5pt"
+                android:paddingTop="4pt"
+                android:hint="Ex: 04"
+                android:id="@+id/etoption4"
+                android:inputType="number"/>
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="4pt"
+            android:paddingRight="4pt">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/BLO_Work_Done"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="#AAFF9800"
+                android:layout_marginTop="4pt"
+                android:layout_gravity="center_horizontal" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginBottom="4pt"
+                android:background="#FF9800" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="100">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="70"
+                android:text="@string/Verification_done"
+                android:textSize="10pt"
+                android:textStyle="bold"
+                android:textColor="#084D76"
+                android:paddingRight="5pt"
+                android:paddingLeft="5pt"
+                android:layout_gravity="left"
+                android:paddingTop="4pt"/>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_option5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="30">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="8pt"
+                    android:paddingRight="5pt"
+                    android:paddingLeft="5pt"
+                    android:paddingTop="4pt"
+                    android:hint="Ex: 100"
+                    android:id="@+id/etoption5"
+                    android:inputType="number"/>
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="100">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="70"
+                android:layout_height="wrap_content"
+                android:text="@string/New_from_collected_and_submitted_during_special_drive"
+                android:textSize="10pt"
+                android:textStyle="bold"
+                android:textColor="#084D76"
+                android:paddingRight="5pt"
+                android:paddingLeft="5pt"
+                android:layout_gravity="left"
+                android:paddingTop="4pt"/>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_option6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="30">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="8pt"
+                    android:paddingRight="5pt"
+                    android:paddingLeft="5pt"
+                    android:paddingTop="4pt"
+                    android:hint="Ex: 49"
+                    android:id="@+id/etoption6"
+                    android:inputType="number"/>
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="100"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="70"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:paddingLeft="5pt"
+                android:paddingRight="5pt"
+                android:paddingTop="4pt"
+                android:text="@string/Family_details_collected_during_special_drive"
+                android:textColor="#084D76"
+                android:textSize="10pt"
+                android:textStyle="bold" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_option7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="30">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="8pt"
+                    android:paddingRight="5pt"
+                    android:paddingLeft="5pt"
+                    android:paddingTop="4pt"
+                    android:hint="Ex: 47"
+                    android:id="@+id/etoption7"
+                    android:inputType="number"/>
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="100">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="70"
+                android:layout_height="wrap_content"
+                android:text="@string/Dead_and_permanent_shifted_elector_detail_collected"
+                android:textSize="10pt"
+                android:textStyle="bold"
+                android:textColor="#084D76"
+                android:paddingRight="5pt"
+                android:paddingLeft="5pt"
+                android:layout_gravity="left"
+                android:paddingTop="4pt"/>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_option8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="30">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="8pt"
+                    android:paddingRight="5pt"
+                    android:paddingLeft="5pt"
+                    android:paddingTop="4pt"
+                    android:hint="Ex: 04"
+                    android:id="@+id/etoption8"
+                    android:inputType="number"/>
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="100">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="70"
+                android:layout_height="wrap_content"
+                android:text="@string/Prospective_voters_on_1st_Jan_2019_detail_collected"
+                android:textSize="10pt"
+                android:textStyle="bold"
+                android:textColor="#084D76"
+                android:paddingRight="5pt"
+                android:paddingLeft="5pt"
+                android:layout_gravity="left"
+                android:paddingTop="4pt"/>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_option9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="30">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="8pt"
+                    android:paddingRight="5pt"
+                    android:paddingLeft="5pt"
+                    android:paddingTop="4pt"
+                    android:hint="Ex: 04"
+                    android:id="@+id/etoption9"
+                    android:inputType="number"/>
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Submit"
+            android:textColor="#fff"
+            android:layout_marginTop="15pt"
+            android:layout_marginRight="10pt"
+            android:id="@+id/btn_submit"
+            android:layout_gravity="right"
+            android:padding="5pt"
+            android:background="@drawable/btn_background"/>
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+

@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="mgov.gov.in.blohybrid.WelcomeBLO"
+    tools:showIn="@layout/activity_welcome_blo"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/image_ref"
+            android:adjustViewBounds="true"
+            android:src="@drawable/eciheader"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="4pt"
+        android:paddingRight="4pt">
+
+        <!--<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:textSize="10pt"
+            android:layout_gravity="right"
+            android:paddingLeft="6pt"
+            android:paddingRight="5pt"
+            android:paddingTop="3pt"
+            android:paddingBottom="4pt"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:background="@drawable/btn_background_redclr"/>-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="right">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LOGOUT"
+            android:textSize="10pt"
+            android:textStyle="bold"
+            android:textColor="#FF0000"
+            android:paddingRight="5pt"
+            android:paddingLeft="5pt"
+            android:id="@+id/logout"
+            android:layout_gravity="right"
+            android:paddingTop="4pt"/>
+
+            <!--<View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="2pt"
+                android:background="#FF0000"/>-->
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Welcome"
+            android:textColor="#FFFFFF"
+            android:textSize="10pt"
+            android:textStyle="bold"
+            android:id="@+id/textView"
+            android:gravity="center"
+            android:background="#AAFF9800"
+            android:layout_gravity="center_horizontal" />
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginBottom="2pt"
+            android:background="#FF9800" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingTop="1pt"
+        android:paddingLeft="4pt"
+        android:paddingRight="4pt"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="33"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorBlue"
+            android:text="State id"
+            android:textSize="9pt"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:id="@+id/tvstateid"
+            android:background="#FF9933"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="33"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorBlue"
+            android:text="AC id"
+            android:textSize="9pt"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:id="@+id/tvacid"
+            android:background="#fff"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="33"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorBlue"
+            android:text="Part id"
+            android:textSize="9pt"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:id="@+id/tvpartid"
+            android:background="#138808"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10pt"
+        android:layout_marginBottom="3pt"
+        android:padding="4pt">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Click for Field Visit"
+            android:textSize="12pt"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:padding="3pt"
+            android:id="@+id/option2"
+            android:layout_marginTop="5pt"
+            android:background="@drawable/btn_background"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Overseas Voter"
+            android:textSize="12pt"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:padding="3pt"
+            android:id="@+id/etoverseas"
+            android:layout_marginTop="5pt"
+            android:background="@drawable/btn_background"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Existing Polling Station"
+            android:textSize="12pt"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:padding="3pt"
+            android:id="@+id/optionexistingPS"
+            android:layout_marginTop="5pt"
+            android:background="@drawable/btn_background"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Capture Family GPS Location"
+            android:textSize="12pt"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:padding="3pt"
+            android:id="@+id/option3"
+            android:layout_marginTop="5pt"
+            android:background="@drawable/btn_background"
+            android:visibility="gone"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Probable Polling Station"
+            android:textSize="12pt"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:padding="3pt"
+            android:id="@+id/option5"
+            android:layout_marginTop="5pt"
+            android:background="@drawable/btn_background"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Auxiliary Polling Station"
+            android:textSize="12pt"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:padding="3pt"
+            android:id="@+id/option8"
+            android:layout_marginTop="5pt"
+            android:background="@drawable/btn_background"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Post Office GPS Location"
+            android:textSize="12pt"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:padding="3pt"
+            android:id="@+id/option6"
+            android:layout_marginTop="5pt"
+            android:background="@drawable/btn_background"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Police Station GPS Location"
+            android:textSize="12pt"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:padding="3pt"
+            android:id="@+id/option9"
+            android:layout_marginTop="5pt"
+            android:background="@drawable/btn_background"/>
+
+        <!--<TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Capture Adjacent Part No."
+            android:textSize="12pt"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:padding="3pt"
+            android:id="@+id/option11"
+            android:layout_marginTop="5pt"
+            android:background="@drawable/btn_background"/>-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Health Care Centre"
+            android:textSize="12pt"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:padding="3pt"
+            android:id="@+id/option10"
+            android:layout_marginTop="5pt"
+            android:background="@drawable/btn_background"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BLO Report"
+            android:textSize="12pt"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:padding="3pt"
+            android:id="@+id/option4"
+            android:layout_marginTop="5pt"
+            android:background="@drawable/btn_background"
+            android:layout_marginBottom="10pt"/>
+
+       <!-- <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Download Format"
+            android:textSize="12pt"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:padding="3pt"
+            android:id="@+id/option8"
+            android:layout_marginTop="5pt"
+            android:background="@drawable/btn_background"/>-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Deactivate This Account"
+            android:textSize="12pt"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:padding="3pt"
+            android:id="@+id/option7"
+            android:layout_marginTop="5pt"
+            android:layout_marginBottom="5pt"
+            android:visibility="gone"
+            android:background="@drawable/btn_background" />
+
+    </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

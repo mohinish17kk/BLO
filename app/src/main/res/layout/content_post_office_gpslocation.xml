@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="mgov.gov.in.blohybrid.PostOfficeGPSLocation"
+    tools:showIn="@layout/activity_post_office_gpslocation"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/image_ref"
+            android:adjustViewBounds="true"
+            android:src="@drawable/eciheader"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvhome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:paddingLeft="5pt"
+        android:paddingRight="5pt"
+        android:paddingTop="4pt"
+        android:text="HOME"
+        android:textColor="#004d99"
+        android:textSize="10pt"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="4pt"
+        android:paddingRight="4pt">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Post Office GPS Location "
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:id="@+id/textView"
+            android:gravity="center"
+            android:background="#AAFF9800"
+            android:layout_marginTop="2pt"
+            android:layout_gravity="center_horizontal" />
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginBottom="8pt"
+            android:background="#FF9800" />
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Show Saved Data"
+                android:layout_marginLeft="3pt"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:layout_marginBottom="5sp"
+                android:background="@drawable/btn_background"
+                android:padding="5pt"
+                android:id="@+id/tvshow"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:src="@drawable/vote_icon"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload Photo"
+                android:paddingLeft="10pt"
+                android:textSize="10pt"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:layout_gravity="right"
+                android:layout_marginRight="2pt"
+                android:padding="5pt"
+                android:id="@+id/tvuploadphoto"
+                android:visibility="gone"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:text="Mention post office address below"
+                android:textSize="9pt"
+                android:textColor="@color/colorBlue"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5pt"
+                android:paddingLeft="5pt"
+                android:paddingRight="5pt"
+                android:textStyle="normal"
+                android:gravity="bottom"
+                android:textSize="8pt"
+                android:hint="Flat / House No./ Floor / Building"
+                android:id="@+id/etpostaddress"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvpollingerror"
+                android:textColor="#FF0000"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2pt"
+                android:paddingLeft="5pt"
+                android:paddingRight="5pt"
+                android:textStyle="normal"
+                android:gravity="bottom"
+                android:textSize="8pt"
+                android:maxLines="2"
+                android:hint="Colony / Street / Locality"
+                android:id="@+id/etpollingaddress2"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvpollingerror2"
+                android:textColor="#FF0000"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2pt"
+                android:paddingLeft="5pt"
+                android:paddingRight="5pt"
+                android:textStyle="normal"
+                android:gravity="bottom"
+                android:textSize="8pt"
+                android:maxLines="2"
+                android:hint="City , State"
+                android:id="@+id/etpollingaddres3"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvpollingerro3"
+                android:textColor="#FF0000"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2pt"
+                android:paddingLeft="5pt"
+                android:paddingRight="5pt"
+                android:textStyle="normal"
+                android:gravity="bottom"
+                android:textSize="8pt"
+                android:hint="Pincode"
+                android:inputType="number"
+                android:maxLength="6"
+                android:maxLines="2"
+                android:id="@+id/etpollingaddress4"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvpollingerror4"
+                android:textColor="#FF0000"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2pt"
+                android:paddingLeft="5pt"
+                android:paddingRight="5pt"
+                android:textStyle="normal"
+                android:gravity="bottom"
+                android:textSize="8pt"
+                android:hint="Area pin code covered under the post office"
+                android:inputType="phone"
+                android:maxLength="90"
+                android:maxLines="2"
+                android:id="@+id/etareapincodecovered"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Area pin code must be comma separated"
+                android:textSize="7pt"
+                android:layout_marginLeft="5pt"
+                android:layout_marginBottom="4pt"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4pt"
+                android:layout_marginRight="4pt"
+                android:text="Capture Post Office GPS Location"
+                android:textSize="9pt"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:padding="3pt"
+                android:id="@+id/pollinggps"
+                android:layout_marginTop="7pt"
+                android:background="@drawable/btn_background"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/tvfetchedgpslocation"
+                android:layout_marginTop="3pt"
+                android:textColor="@color/colorBlue"
+                android:gravity="center"
+                android:textSize="8pt"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/tvfetchedgpslocation1"
+                    android:layout_marginTop="3pt"
+                    android:textColor="@color/colorBlue"
+                    android:gravity="center"
+                    android:textSize="8pt"/>
+
+            </LinearLayout>
+
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:textColor="#fff"
+                android:layout_marginTop="15pt"
+                android:layout_marginRight="10pt"
+                android:id="@+id/btn_submitform6"
+                android:layout_gravity="right"
+                android:padding="5pt"
+                android:background="@drawable/btn_background"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+
+

@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="mgov.gov.in.blohybrid.VoterFullDetail"
+    tools:showIn="@layout/activity_voter_full_detail"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/image_ref"
+            android:adjustViewBounds="true"
+            android:src="@drawable/eciheader"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="4pt"
+        android:paddingRight="4pt">
+
+        <TextView
+            android:id="@+id/tvhome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:paddingLeft="5pt"
+            android:paddingRight="5pt"
+            android:paddingTop="4pt"
+            android:text="HOME"
+            android:textColor="#004d99"
+            android:textSize="10pt"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="2pt"
+            android:background="#AAFF9800"
+            android:gravity="center"
+            android:text="Voter Full Detail / A-S-D Status"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginBottom="5pt"
+            android:background="#FF9800" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4pt"
+            android:layout_marginRight="4pt"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2pt"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivelectorimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="4pt"
+                    android:paddingRight="4pt"
+                    android:src="@mipmap/ic_launcher" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="1pt">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Name:"
+                            android:textColor="@color/colorBlue"
+                            android:textSize="9pt"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2pt"
+                            android:text="Mohinish Uzzwal"
+                            android:textSize="8pt"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="1pt">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Epic No:"
+                            android:textColor="@color/colorBlue"
+                            android:textSize="9pt"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvvoterepicnumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2pt"
+                            android:text="ABCD234567"
+                            android:textSize="8pt" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="1pt">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Serial No:"
+                            android:textColor="@color/colorBlue"
+                            android:textSize="9pt"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvvoterserialnumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2pt"
+                            android:text="a6/cd/896242 "
+                            android:textSize="8pt" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="1pt">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="RLN Name :"
+                            android:textColor="@color/colorBlue"
+                            android:textSize="9pt"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvvoterrlnname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2pt"
+                            android:text=" -- "
+                            android:textSize="8pt" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="1pt">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gender :"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="9pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvvotergender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4pt"
+                    android:text="Male"
+                    android:textSize="8pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10pt"
+                    android:text="Age :"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="9pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvvoterage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4pt"
+                    android:text="25"
+                    android:textSize="8pt" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="1pt">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Address:"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="9pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvvoteraddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2pt"
+                    android:text="Road Area, Sansad Marg, Pandit Pant Marg Area, Sansad Marg Area, New Delhi, Delhi 110001"
+                    android:textSize="8pt" />
+
+            </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/cbdivyangjan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#004d99"
+                    android:text="Divyangjan [Y/N]"
+                    android:textStyle="bold"
+                    android:textSize="8pt"
+                    android:visibility="gone"/>
+
+            <CheckBox
+                android:id="@+id/cbdvoter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#004d99"
+                android:text="D-Voter [Y/N]"
+                android:textStyle="bold"
+                android:textSize="8pt"
+                android:visibility="gone"/>
+            <CheckBox
+                android:id="@+id/cbprnpr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#004d99"
+                android:text="PR [Y/N]"
+                android:textStyle="bold"
+                android:textSize="8pt"
+                android:visibility="gone"/>
+
+            <CheckBox
+                android:id="@+id/cbpwdmarked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#004d99"
+                android:text="PWD [Y/N]"
+                android:textStyle="bold"
+                android:textSize="8pt"/>
+
+            <CheckBox
+                android:id="@+id/cbform7and8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#004d99"
+                android:text="Whether filled in Form 7/8 collected on the spot during the visit of house hold [Y/N]"
+                android:textStyle="bold"
+                android:textSize="8pt"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="8pt"
+                android:hint="IF yes, provide form reference no."
+                android:id="@+id/etform7and8"
+                android:layout_marginLeft="3pt"
+                android:maxLength="20"/>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="2pt">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Voter Status"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="9pt"
+                    android:layout_marginTop="4pt"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spinnerASD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2pt"
+                    android:background="?attr/editTextBackground"
+                    android:spinnerMode="dialog" />
+            </LinearLayout>
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Provide form 8 to voter and mention form no. here.. "
+                android:id="@+id/etform8"
+                android:visibility="gone"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mention reason for being voter absent (if any..)"
+                android:id="@+id/etabsentreason"
+                android:visibility="gone"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mention new address (if known..)"
+                android:id="@+id/etshifted"
+                android:textSize="7pt"
+                android:visibility="gone"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="2pt"
+                android:id="@+id/lldeath"
+                android:visibility="gone">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Registered Death"
+                    android:textColor="#004d99"
+                    android:textSize="8pt"
+                    android:id="@+id/rbregistered"/>
+
+                <RadioButton
+                    android:id="@+id/rbreported"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8pt"
+                    android:text="Reported Death"
+                    android:textColor="#004d99"
+                    android:textSize="8pt" />
+
+            </LinearLayout>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mention Death certificate no. and issuing authority (if known..)"
+                android:id="@+id/etdeath"
+                android:textSize="7pt"
+                android:visibility="gone"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mention issuing authority."
+                android:id="@+id/etdeathauthority"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="2pt"
+                android:id="@+id/llmob">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile Number"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="9pt"
+                    android:layout_marginTop="9pt"
+                    android:textStyle="bold" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_option1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="8pt"
+                        android:hint="Mobile Number"
+                        android:id="@+id/etmobile"
+                        android:inputType="number"
+                        android:layout_marginLeft="3pt"
+                        android:maxLength="10"/>
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:id="@+id/llmobstatus"
+                android:visibility="gone">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Self"
+                    android:textColor="#004d99"
+                    android:textSize="8pt"
+                    android:id="@+id/rbself"/>
+
+                <RadioButton
+                    android:id="@+id/rbhof"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8pt"
+                    android:text="Head of the family"
+                    android:textColor="#004d99"
+                    android:textSize="8pt" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Important Elector: "
+                    android:textColor="@color/colorBlue"
+                    android:textSize="9pt"
+                    android:textStyle="bold"
+                    android:layout_marginTop="4pt"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2pt">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Marked Voter"
+                        android:textColor="#004d99"
+                        android:textSize="8pt"
+                        android:id="@+id/rbvip"/>
+
+                    <RadioButton
+                        android:id="@+id/rbselectedvoter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8pt"
+                        android:text="Selected Voter"
+                        android:textColor="#004d99"
+                        android:textSize="8pt"
+                        android:visibility="gone"/>
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Retired Govt. Officer"
+                        android:textColor="#004d99"
+                        android:textSize="8pt"
+                        android:layout_gravity="center"
+                        android:id="@+id/rbretired"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="2pt"
+                android:id="@+id/llform8ref">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Modification Of Entries(If any):"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="9pt"
+                    android:layout_marginTop="9pt"
+                    android:textStyle="bold" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_option3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="8pt"
+                        android:hint="Mention reference of form 8"
+                        android:id="@+id/etform8ref"
+                        android:layout_marginLeft="3pt"
+                        android:maxLength="20"/>
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:id="@+id/llmobtype">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile Type: "
+                android:textColor="@color/colorBlue"
+                android:textSize="9pt"
+                android:textStyle="bold"
+                android:layout_marginTop="4pt"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="2pt">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Smart Phone"
+                    android:textColor="#004d99"
+                    android:textSize="8pt"
+                    android:id="@+id/rbsmart"/>
+
+                <RadioButton
+                    android:id="@+id/rbbasic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8pt"
+                    android:text="Basic Phone"
+                    android:textColor="#004d99"
+                    android:textSize="8pt" />
+
+            </LinearLayout>
+</LinearLayout>
+
+            <Spinner
+                android:id="@+id/spinnerPhonetype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginLeft="2pt"
+                android:background="?attr/editTextBackground"
+                android:spinnerMode="dialog"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="5pt">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rectification"
+                android:textStyle="bold"
+                android:background="#b32d00"
+                android:layout_gravity="center"
+                android:id="@+id/btnrectification"
+                android:textColor="#ffffff"
+                android:layout_marginTop="5sp"
+                android:layout_marginBottom="5sp"
+                android:layout_marginRight="15pt"
+                android:paddingLeft="5pt"
+                android:paddingRight="5pt"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:background="@drawable/btn_background"
+                android:layout_gravity="center"
+                android:id="@+id/btnsubmit"
+                android:textColor="#ffffff"
+                android:layout_marginTop="5sp"
+                android:layout_marginBottom="5sp"
+                android:layout_marginRight="15pt"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+</LinearLayout>

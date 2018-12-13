@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/textView39"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="1pt"
+    android:layout_weight="0.2"
+    android:ellipsize="end"
+    android:textSize="9sp"
+    android:scrollHorizontally="false"
+    android:inputType="textMultiLine"
+    android:background="@color/colorTotal"
+    android:gravity="center"
+    android:padding="3pt"
+    android:text="Work Done"
+    android:textColor="@color/colorBlack" />

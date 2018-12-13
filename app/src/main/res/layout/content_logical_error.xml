@@ -1,0 +1,739 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="mgov.gov.in.blohybrid.LogicalErrorActivity"
+    tools:showIn="@layout/activity_logical_error"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/image_ref"
+            android:adjustViewBounds="true"
+            android:src="@drawable/eciheader"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HOME"
+        android:textSize="10pt"
+        android:textStyle="bold"
+        android:textColor="#004d99"
+        android:paddingRight="5pt"
+        android:paddingLeft="5pt"
+        android:id="@+id/tvhome"
+        android:layout_gravity="right"
+        android:paddingTop="4pt"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="4pt"
+        android:paddingRight="4pt">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Logical Error"
+            android:textColor="#FFFFFF"
+            android:textSize="10pt"
+            android:textStyle="bold"
+            android:id="@+id/textView"
+            android:gravity="center"
+            android:background="#AAFF9800"
+            android:layout_gravity="center_horizontal" />
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="3pt"
+            android:background="#FF9800"
+            android:layout_marginBottom="2pt"/>
+
+
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10sp">
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.7"
+                android:paddingLeft="3pt"
+                android:text="1.Voter's First/Last Name is Null/Junk characters"
+                android:textColor="#0A36CA"
+                android:textSize="8pt"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="0sp"
+                android:layout_weight="0.15"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2pt"
+                android:text="--"
+                android:textColor="#fff"
+                android:textSize="8pt"
+                android:textStyle="bold"
+                android:id="@+id/btn1"
+                android:layout_marginBottom="2sp"
+                android:background="@drawable/btn_background"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3pt"
+            android:background="#E0E1E1"
+            android:layout_marginBottom="2pt"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="2sp">
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.7"
+                android:paddingLeft="3pt"
+                android:text="2.Part no. is Null/Junk characters"
+                android:textColor="#0A36CA"
+                android:textSize="8pt"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="0sp"
+                android:layout_weight="0.15"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2pt"
+                android:text="--"
+                android:textColor="#fff"
+                android:textSize="8pt"
+                android:textStyle="bold"
+                android:id="@+id/btn2"
+                android:layout_marginBottom="2sp"
+                android:background="@drawable/btn_background"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3pt"
+            android:background="#E0E1E1"
+            android:layout_marginBottom="2pt"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="2sp">
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.7"
+                android:paddingLeft="3pt"
+                android:text="3.Serial No. of the voter is Null/Junk Characters"
+                android:textColor="#0A36CA"
+                android:textSize="8pt"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="0sp"
+                android:layout_weight="0.15"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2pt"
+                android:text="--"
+                android:textColor="#fff"
+                android:textSize="8pt"
+                android:textStyle="bold"
+                android:id="@+id/btn3"
+                android:layout_marginBottom="2sp"
+                android:background="@drawable/btn_background"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3pt"
+            android:background="#E0E1E1"
+            android:layout_marginBottom="2pt"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="2sp">
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.7"
+                android:paddingLeft="3pt"
+                android:text="4.Section no. is Null/Junk Characters"
+                android:textColor="#0A36CA"
+                android:textSize="8pt"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="0sp"
+                android:layout_weight="0.15"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2pt"
+                android:text="--"
+                android:textColor="#fff"
+                android:textSize="8pt"
+                android:textStyle="bold"
+                android:id="@+id/btn4"
+                android:layout_marginBottom="2sp"
+                android:background="@drawable/btn_background"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3pt"
+            android:background="#E0E1E1"
+            android:layout_marginBottom="2pt"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="2sp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.7"
+                android:paddingLeft="3pt"
+                android:text="SolrId is duplicated atleast once"
+                android:textColor="#0A36CA"
+                android:textSize="8pt"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="0sp"
+                android:layout_weight="0.15"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2pt"
+                android:text="--"
+                android:textColor="#fff"
+                android:textSize="8pt"
+                android:textStyle="bold"
+                android:id="@+id/btn5"
+                android:layout_marginBottom="2sp"
+                android:background="@drawable/btn_background"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3pt"
+            android:background="#E0E1E1"
+            android:layout_marginBottom="2pt"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="2sp">
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.7"
+                android:paddingLeft="3pt"
+                android:text="5.Voter relationship # M,F,H,O or m,f,h,o/Junk characters"
+                android:textColor="#0A36CA"
+                android:textSize="8pt"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="0sp"
+                android:layout_weight="0.15"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2pt"
+                android:text="--"
+                android:textColor="#fff"
+                android:textSize="8pt"
+                android:textStyle="bold"
+                android:id="@+id/btn6"
+                android:layout_marginBottom="2sp"
+                android:background="@drawable/btn_background"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3pt"
+            android:background="#E0E1E1"
+            android:layout_marginBottom="2pt"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="2sp">
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.7"
+                android:paddingLeft="3pt"
+                android:text="6.Voter's sex M/F/TG (Third Gender)/ Junk characters"
+                android:textColor="#0A36CA"
+                android:textSize="8pt"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="0sp"
+                android:layout_weight="0.15"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2pt"
+                android:text="--"
+                android:textColor="#fff"
+                android:textSize="8pt"
+                android:textStyle="bold"
+                android:id="@+id/btn7"
+                android:layout_marginBottom="2sp"
+                android:background="@drawable/btn_background"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3pt"
+            android:background="#E0E1E1"
+            android:layout_marginBottom="2pt"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="2sp">
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.7"
+                android:paddingLeft="3pt"
+                android:text="7.Voter's gender is Male but relationship is H / Junk characters"
+                android:textColor="#0A36CA"
+                android:textSize="8pt"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="0sp"
+                android:layout_weight="0.15"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2pt"
+                android:text="--"
+                android:textColor="#fff"
+                android:textSize="8pt"
+                android:textStyle="bold"
+                android:id="@+id/btn8"
+                android:layout_marginBottom="2sp"
+                android:background="@drawable/btn_background"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3pt"
+            android:background="#E0E1E1"
+            android:layout_marginBottom="2pt"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="2sp">
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.7"
+                android:paddingLeft="3pt"
+                android:text="8.Voter's Relative name is blank / Junk characters"
+                android:textColor="#0A36CA"
+                android:textSize="8pt"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="0sp"
+                android:layout_weight="0.15"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2pt"
+                android:text="--"
+                android:textColor="#fff"
+                android:textSize="8pt"
+                android:textStyle="bold"
+                android:id="@+id/btn9"
+                android:layout_marginBottom="2sp"
+                android:background="@drawable/btn_background"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3pt"
+            android:background="#E0E1E1"
+            android:layout_marginBottom="2pt"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="2sp">
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.7"
+                android:paddingLeft="3pt"
+                android:text="9.Non Standard EPIC No"
+                android:textColor="#0A36CA"
+                android:textSize="8pt"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="0sp"
+                android:layout_weight="0.15"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2pt"
+                android:text="--"
+                android:textColor="#fff"
+                android:textSize="8pt"
+                android:textStyle="bold"
+                android:id="@+id/btn10"
+                android:layout_marginBottom="2sp"
+                android:background="@drawable/btn_background"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3pt"
+            android:background="#E0E1E1"
+            android:layout_marginBottom="2pt"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="2sp">
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.7"
+                android:paddingLeft="3pt"
+                android:text="10.Age is  less than 18 or greater than 100 / Junk characters"
+                android:textColor="#0A36CA"
+                android:textSize="8pt"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="0sp"
+                android:layout_weight="0.15"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2pt"
+                android:text="--"
+                android:textColor="#fff"
+                android:textSize="8pt"
+                android:textStyle="bold"
+                android:id="@+id/btn11"
+                android:layout_marginBottom="2sp"
+                android:background="@drawable/btn_background"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3pt"
+            android:background="#E0E1E1"
+            android:layout_marginBottom="2pt"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="2sp">
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.7"
+                android:paddingLeft="3pt"
+                android:text="11.Photograph exist but ID card no is not available"
+                android:textColor="#0A36CA"
+                android:textSize="8pt"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="0sp"
+                android:layout_weight="0.15"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2pt"
+                android:text="--"
+                android:textColor="#fff"
+                android:textSize="8pt"
+                android:textStyle="bold"
+                android:id="@+id/btn12"
+                android:layout_marginBottom="2sp"
+                android:background="@drawable/btn_background"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3pt"
+            android:background="#E0E1E1"
+            android:layout_marginBottom="2pt"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="2sp">
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.7"
+                android:paddingLeft="3pt"
+                android:text="12.ID Card No. Exist but photograph is not available"
+                android:textColor="#0A36CA"
+                android:textSize="8pt"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="0sp"
+                android:layout_weight="0.15"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2pt"
+                android:text="--"
+                android:textColor="#fff"
+                android:textSize="8pt"
+                android:textStyle="bold"
+                android:id="@+id/btn13"
+                android:layout_marginBottom="2sp"
+                android:background="@drawable/btn_background"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3pt"
+            android:background="#E0E1E1"
+            android:layout_marginBottom="2pt"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="2sp">
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.7"
+                android:paddingLeft="3pt"
+                android:text="13.List of records where EPIC no. is repeating"
+                android:textColor="#0A36CA"
+                android:textSize="8pt"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="0sp"
+                android:layout_weight="0.15"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2pt"
+                android:text="--"
+                android:textColor="#fff"
+                android:textSize="8pt"
+                android:textStyle="bold"
+                android:id="@+id/btn14"
+                android:layout_marginBottom="2sp"
+                android:background="@drawable/btn_background"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3pt"
+            android:background="#E0E1E1"
+            android:layout_marginBottom="2pt"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="2sp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.7"
+                android:paddingLeft="3pt"
+                android:text="Invalid or junk  Section number"
+                android:textColor="#0A36CA"
+                android:textSize="8pt"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="0sp"
+                android:layout_weight="0.15"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2pt"
+                android:text="--"
+                android:textColor="#fff"
+                android:textSize="8pt"
+                android:textStyle="bold"
+                android:id="@+id/btn15"
+                android:layout_marginBottom="2sp"
+                android:background="@drawable/btn_background"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3pt"
+            android:background="#E0E1E1"
+            android:layout_marginBottom="2pt"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="2sp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.7"
+                android:paddingLeft="3pt"
+                android:text="Invalid or junk  House number"
+                android:textColor="#0A36CA"
+                android:textSize="8pt"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="0sp"
+                android:layout_weight="0.15"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2pt"
+                android:text="--"
+                android:textColor="#fff"
+                android:textSize="8pt"
+                android:textStyle="bold"
+                android:id="@+id/btn16"
+                android:layout_marginBottom="2sp"
+                android:background="@drawable/btn_background"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3pt"
+            android:background="#E0E1E1"
+            android:layout_marginBottom="2pt"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="2sp">
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.7"
+                android:paddingLeft="3pt"
+                android:text="14.Number of sections having no voters"
+                android:textColor="#0A36CA"
+                android:textSize="8pt"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="0sp"
+                android:layout_weight="0.15"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2pt"
+                android:text="--"
+                android:textColor="#fff"
+                android:textSize="8pt"
+                android:textStyle="bold"
+                android:id="@+id/btn17"
+                android:layout_marginBottom="2sp"
+                android:background="@drawable/btn_background"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3pt"
+            android:background="#E0E1E1"
+            android:layout_marginBottom="2pt"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="2sp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.7"
+                android:paddingLeft="3pt"
+                android:text="Gender is Female ,age >30 but still relative type is F/O"
+                android:textColor="#0A36CA"
+                android:textSize="8pt"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="0sp"
+                android:layout_weight="0.15"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2pt"
+                android:text="--"
+                android:textColor="#fff"
+                android:textSize="8pt"
+                android:textStyle="bold"
+                android:id="@+id/btn18"
+                android:layout_marginBottom="2sp"
+                android:background="@drawable/btn_background"/>
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>

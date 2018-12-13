@@ -1,0 +1,1298 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="mgov.gov.in.blohybrid.Form8a"
+    tools:showIn="@layout/activity_form8a"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/image_ref"
+            android:adjustViewBounds="true"
+            android:src="@drawable/eciheader"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvhome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:paddingLeft="5pt"
+        android:paddingRight="5pt"
+        android:paddingTop="4pt"
+        android:text="@string/Home"
+        android:textColor="#004d99"
+        android:textSize="10pt"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="4pt"
+        android:paddingRight="4pt">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/Form_8a"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:id="@+id/textView"
+            android:gravity="center"
+            android:background="#AAFF9800"
+            android:layout_marginTop="2pt"
+            android:layout_gravity="center_horizontal" />
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginBottom="8pt"
+            android:background="#FF9800" />
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="4pt">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="2pt"
+                android:paddingLeft="3pt"
+                android:text="@string/Details_of_person_whose_entry_to_be_transposed"
+                android:textColor="#b32d00"
+                android:gravity="center"
+                android:textSize="8pt"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/darker_gray"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="3pt"
+                android:text="@string/Details_provided_in_the_form"
+                android:textColor="#004d99"
+                android:textSize="8pt"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Name"
+                    android:textSize="8pt"
+                    android:textColor="@color/colorBlue"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="7pt"
+                    android:textStyle="bold"
+                    android:id="@+id/tvname"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="2pt"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="1pt">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Epic_No"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="8pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvepic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4pt"
+                    android:textColor="@color/black"
+                    android:textSize="7pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10pt"
+                    android:text="@string/Sl_No"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="8pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvslno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4pt"
+                    android:textColor="@color/black"
+                    android:textSize="7pt" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="1pt">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Part_No"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="8pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvpart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4pt"
+                    android:textColor="@color/black"
+                    android:textSize="7pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10pt"
+                    android:text="@string/RefNo"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="8pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvrefno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4pt"
+                    android:textColor="@color/black"
+                    android:textSize="7pt" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Email"
+                    android:textSize="8pt"
+                    android:textColor="@color/colorBlue"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="7pt"
+                    android:id="@+id/tvemail"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="2pt"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Mobile_No"
+                    android:textSize="8pt"
+                    android:textColor="@color/colorBlue"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="7pt"
+                    android:id="@+id/tvmobile"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="2pt"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/darker_gray"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="3pt"
+                android:text="@string/Details_fetched_from_ERoll"
+                android:textColor="#004d99"
+                android:textSize="8pt"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="1pt">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Name"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="8pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tverollname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4pt"
+                    android:textColor="@color/black"
+                    android:textSize="7pt" />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="1pt">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Gender"
+                android:textColor="@color/colorBlue"
+                android:textSize="8pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tverollgender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4pt"
+                android:textColor="@color/black"
+                android:textSize="7pt" />
+          </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="1pt">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Age"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="8pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tverollage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4pt"
+                    android:textColor="@color/black"
+                    android:textSize="7pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/RLN_Type"
+                    android:layout_marginLeft="10pt"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="8pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tverollrlntype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4pt"
+                    android:textColor="@color/black"
+                    android:textSize="7pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/DOB"
+                    android:layout_marginLeft="10pt"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="8pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tverolldob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4pt"
+                    android:textColor="@color/black"
+                    android:textSize="7pt" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="1pt">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/RLN_Name"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="8pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tverollrlnname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4pt"
+                    android:textColor="@color/black"
+                    android:textSize="7pt" />
+            </LinearLayout>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/darker_gray"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="3pt"
+                android:layout_marginBottom="2pt"
+                android:text="@string/The_Address_where_the_applicant_has_shifted"
+                android:textColor="#b32d00"
+                android:textSize="8pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="3pt"
+                android:text="@string/Details_provided_in_the_form"
+                android:textColor="#004d99"
+                android:textSize="8pt"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/H_s_No"
+                    android:textSize="8pt"
+                    android:textColor="@color/colorBlue"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="7pt"
+                    android:id="@+id/tvhsno2"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="2pt"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="1pt">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Street_Area"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="8pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvstreet2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4pt"
+                    android:textColor="@color/black"
+                    android:textSize="7pt" />
+
+                <!--<TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10pt"
+                    android:text="Sl.No :"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="8pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvslno2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4pt"
+                    android:textColor="@color/black"
+                    android:textSize="7pt" />-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="1pt">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Village_Town"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="8pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvvillage2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4pt"
+                    android:textColor="@color/black"
+                    android:textSize="7pt" />
+
+                <!--<TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10pt"
+                    android:text="Mobile :"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="8pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvmobno2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4pt"
+                    android:textColor="@color/black"
+                    android:textSize="7pt" />-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Post_Office"
+                    android:textSize="8pt"
+                    android:textColor="@color/colorBlue"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="7pt"
+                    android:id="@+id/tvpo2"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="2pt"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/District"
+                    android:textSize="8pt"
+                    android:textColor="@color/colorBlue"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="7pt"
+                    android:id="@+id/tvdistrict2"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="2pt"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Pin_Code"
+                    android:textSize="8pt"
+                    android:textColor="@color/colorBlue"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="7pt"
+                    android:id="@+id/tvpincode2"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="2pt"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginTop="5pt"
+                android:layout_height="2dp"
+                android:background="@android:color/darker_gray"/>
+            <!--<TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="3pt"
+                android:text="Details fetched from ERoll"
+                android:textColor="#004d99"
+                android:textSize="8pt"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="1pt">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name :"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="8pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tverollname2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4pt"
+                    android:textColor="@color/black"
+                    android:textSize="7pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10pt"
+                    android:text="Gender :"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="8pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tverollgender2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4pt"
+                    android:textColor="@color/black"
+                    android:textSize="7pt" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="1pt">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Age :"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="8pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tverollage2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4pt"
+                    android:textColor="@color/black"
+                    android:textSize="7pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RLN Type :"
+                    android:layout_marginLeft="10pt"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="8pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tverollrlntype2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4pt"
+                    android:textColor="@color/black"
+                    android:textSize="7pt" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="1pt">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RLN Name :"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="8pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tverollrlnname2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4pt"
+                    android:textColor="@color/black"
+                    android:textSize="7pt" />
+            </LinearLayout>-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="3pt"
+                android:layout_marginTop="4pt"
+                android:layout_marginBottom="2pt"
+                android:text="@string/Checklist_for_BLO_Designated_Officer"
+                android:textColor="#b32d00"
+                android:textSize="8pt"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Field_Verification_YN"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="8pt"
+                    android:textStyle="bold"
+                    android:layout_marginTop="4pt"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2pt">
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Address"
+                        android:textColor="#004d99"
+                        android:textSize="7pt"
+                        android:id="@+id/cbaddress"/>
+
+                    <CheckBox
+                        android:id="@+id/cbdob"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8pt"
+                        android:text="@string/DOB_Age"
+                        android:textColor="#004d99"
+                        android:textSize="7pt" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/On_field_visit_Applicant_is_found"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="8pt"
+                    android:textStyle="bold"
+                    android:layout_marginTop="4pt"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2pt">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="2pt">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Absent"
+                            android:textColor="#004d99"
+                            android:textSize="7pt"
+                            android:id="@+id/rbabsent"/>
+
+                        <RadioButton
+                            android:id="@+id/rbshifted"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8pt"
+                            android:text="@string/Shifted"
+                            android:textColor="#004d99"
+                            android:textSize="7pt" />
+                        <RadioButton
+                            android:id="@+id/rbdead"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8pt"
+                            android:text="@string/Dead"
+                            android:textColor="#004d99"
+                            android:textSize="7pt" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <RadioButton
+                    android:id="@+id/rbnosuchperson"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8pt"
+                    android:text="@string/No_Such_Person"
+                    android:textColor="#004d99"
+                    android:textSize="7pt"
+                    android:gravity="center"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/No_of_Application_already_applied"
+                    android:textSize="8pt"
+                    android:textColor="@color/colorBlue"
+                    android:textStyle="bold"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Ex. 3"
+                    android:id="@+id/etidduplicatecount"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cbdetailverified"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Applicant_Details_are_Verified_and_Correct"
+                    android:textSize="8pt"
+                    android:textColor="@color/colorBlue"
+                    android:textStyle="bold"/>
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/darker_gray"/>
+
+            <!--         <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:id="@+id/lldataentryerrorifany"
+                         android:orientation="vertical">
+
+                         <LinearLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:orientation="horizontal"
+                             android:paddingBottom="1pt">
+                             <TextView
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:text="@string/Remark"
+                                 android:textColor="@color/colorBlue"
+                                 android:textSize="9pt"
+                                 android:textStyle="bold" />
+
+                             <EditText
+                                 android:id="@+id/etremark"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 android:layout_marginLeft="4pt"
+                                 android:textColor="@color/black"
+                                 android:textSize="8pt"
+                                 android:hint="@string/Remark"/>
+                         </LinearLayout>
+
+
+            </LinearLayout>  -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Data_entry_errors_if_any"
+                    android:textSize="8pt"
+                    android:textColor="@color/colorBlue"
+                    android:textStyle="bold"/>
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cbdataentryerror"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lldataentryerrorifany"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/First_Name"
+                        android:textSize="9pt"
+                        android:textColor="@color/colorBlue"
+                        android:textStyle="bold"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="8pt"
+                        android:id="@+id/etname"
+                        android:hint="@string/First_Name"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="2pt"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Last_Name"
+                        android:textSize="9pt"
+                        android:textColor="@color/colorBlue"
+                        android:textStyle="bold"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="8pt"
+                        android:id="@+id/etlname"
+                        android:hint="@string/Last_Name"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="2pt"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="1pt"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Gender"
+                        android:textColor="@color/colorBlue"
+                        android:textSize="9pt"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/etgender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4pt"
+                        android:hint="@string/M_F_T"
+                        android:textColor="@color/black"
+
+                        android:textSize="8pt" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="1pt"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/DOB"
+                        android:textColor="@color/colorBlue"
+                        android:textSize="9pt"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btdobage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4pt"
+                        android:text="@string/Select_DOB"
+                        android:inputType="date"
+                        android:textColor="@color/black"
+                        android:textSize="8pt" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="1pt"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/RLN_First_Name"
+                        android:textColor="@color/colorBlue"
+                        android:textSize="9pt"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/etrlnname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4pt"
+                        android:textColor="@color/black"
+                        android:hint="@string/RLN_First_Name_hint"
+                        android:textSize="8pt" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="1pt"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/RLN_Last_Name"
+                        android:textColor="@color/colorBlue"
+                        android:textSize="9pt"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/etrlnlname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4pt"
+                        android:textColor="@color/black"
+                        android:hint="@string/RLN_Last_Name_hint"
+                        android:textSize="8pt" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="1pt"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/RLN_Type"
+                        android:textColor="@color/colorBlue"
+                        android:textSize="9pt"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/etrlntype"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4pt"
+                        android:hint="@string/RLN_Type"
+                        android:textColor="@color/black"
+                        android:textSize="8pt" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="1pt">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/H_s_No"
+                        android:textColor="@color/colorBlue"
+                        android:textSize="9pt"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/ethsno"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4pt"
+                        android:hint="@string/House_No"
+                        android:textColor="@color/black"
+                        android:textSize="8pt" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="1pt">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Street_Area"
+                        android:textColor="@color/colorBlue"
+                        android:textSize="9pt"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/etstreet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4pt"
+                        android:hint="@string/Street_Area"
+                        android:textColor="@color/black"
+                        android:textSize="8pt" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="1pt"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Village_Town"
+                        android:textColor="@color/colorBlue"
+                        android:textSize="9pt"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/etvillage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4pt"
+                        android:hint="@string/Village_Town"
+                        android:textColor="@color/black"
+                        android:textSize="8pt" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="1pt">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Post_Office"
+                        android:textColor="@color/colorBlue"
+                        android:textSize="9pt"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/etpo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4pt"
+                        android:hint="@string/Post_Office"
+                        android:textColor="@color/black"
+                        android:textSize="8pt" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="1pt">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/District"
+                        android:textColor="@color/colorBlue"
+                        android:textSize="9pt"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/etdistrict"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4pt"
+                        android:hint="@string/District"
+                        android:textColor="@color/black"
+                        android:textSize="8pt" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="1pt">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Pin_Code"
+                        android:textColor="@color/colorBlue"
+                        android:textSize="9pt"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/etpincode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4pt"
+                        android:hint="@string/Enter_Pin_Code"
+                        android:textColor="@color/black"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:textSize="8pt" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="1pt">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Remark"
+                        android:textColor="@color/colorBlue"
+                        android:textSize="9pt"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/etremark"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4pt"
+                        android:textColor="@color/black"
+                        android:textSize="8pt"
+                        android:hint="@string/Remark"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Submit"
+                android:textColor="#fff"
+                android:layout_marginTop="15pt"
+                android:layout_marginRight="10pt"
+                android:layout_marginBottom="5pt"
+                android:id="@+id/btn_submit"
+                android:layout_gravity="right"
+                android:padding="5pt"
+                android:background="@drawable/btn_background"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+
+
